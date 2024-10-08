@@ -1,13 +1,13 @@
 <template>
-  <header class="header">
+  <header class="header mb-10">
     <div class="flex flex-row items-center gap-2">
-      <img src="~/assets/icon/code.svg" />
+      <img src="~/assets/icon/code.svg" alt="логотип." />
       <span class="text-white text-4xl">Sachkov Tech</span>
     </div>
 
     <button class="header__btn">
       <span class="header__btn-text">Записаться на курс</span>
-      <img src="~/assets/icon/star.png" />
+      <img src="~/assets/icon/star.png" alt="записаться." />
     </button>
   </header>
 </template>

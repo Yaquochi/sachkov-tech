@@ -1,6 +1,7 @@
 <template>
   <div class="app">
     <LayoutHeader />
+    <LayoutCover />
   </div>
 </template>
 
