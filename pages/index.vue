@@ -6,6 +6,7 @@
       <LayoutCover />
       <LayoutShortAbout />
       <LayoutAboutProfession />
+      <LayoutWillSuit />
     </div>
   </div>
 </template>
