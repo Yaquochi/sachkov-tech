@@ -1,8 +1,12 @@
 <template>
   <div class="app">
     <LayoutHeader />
-    <LayoutCover />
-    <LayoutShortAbout />
+
+    <div class="app__content">
+      <LayoutCover />
+      <LayoutShortAbout />
+      <LayoutAboutProfession />
+    </div>
   </div>
 </template>
 
@@ -20,5 +24,11 @@
   background-position: center top;
   min-height: 100vh;
   padding: 40px 100px;
+}
+
+.app__content {
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
 }
 </style>
