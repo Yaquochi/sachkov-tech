@@ -1,11 +1,11 @@
 <template>
-  <section class="w-full flex flex-row gap-10">
+  <section class="w-full flex flex-row gap-10 mb-36">
     <div class="section__card flex flex-col justify-between p-10 w-3/5">
       <h1 class="section__title text-8xl font-extrabold tracking-wide">
-        .Net Fullstack course
+        .Net Fullstack Development course
       </h1>
 
-      <ul class="flex flex-col gap-5">
+      <ul class="flex flex-col gap-6">
         <li class="flex flex-row items-center">
           <img src="~/assets/icon/star.png" alt="пункт списка." />
           <span class="text-white text-xl">
@@ -38,7 +38,7 @@
     </div>
 
     <div class="section__card pt-6 w-2/5">
-      <img src="~/assets/img/author.png" alt="автор." class="w-4/5 mx-auto" />
+      <img src="~/assets/img/author.png" alt="автор." class="w-3/4 mx-auto" />
 
       <div class="flex flex-col items-center gap-7 pb-10 px-6">
         <span class="author font-bold text-white">Кирилл Сачков</span>

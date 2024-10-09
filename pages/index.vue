@@ -2,6 +2,7 @@
   <div class="app">
     <LayoutHeader />
     <LayoutCover />
+    <LayoutShortAbout />
   </div>
 </template>
 
