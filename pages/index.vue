@@ -7,11 +7,10 @@
       <LayoutShortAbout />
       <LayoutAboutProfession />
       <LayoutWillSuit />
+      <LayoutConsistOf />
     </div>
   </div>
 </template>
-
-<script setup lang="ts"></script>
 
 <style>
 * {
