@@ -8,6 +8,7 @@
       <LayoutAboutProfession />
       <LayoutWillSuit />
       <LayoutConsistOf />
+      <LayoutProgramm />
     </div>
   </div>
 </template>

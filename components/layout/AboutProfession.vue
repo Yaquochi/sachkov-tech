@@ -38,7 +38,7 @@
         <li
           class="section__card p-10 rounded-2xl flex flex-col items-start gap-6 text-white"
         >
-          <span class="section__card-pay">от 353 000</span>
+          <span class="section__card-pay">от 353 000 руб</span>
           <span class="text-xl">Lead</span>
         </li>
       </ul>
@@ -46,7 +46,7 @@
       <span
         class="text-white text-lg -rotate-90 w-7 whitespace-nowrap absolute -right-12 top-2/3"
       >
-        По данным
+        *По данным
         <a
           href="https://career.habr.com/salaries?spec_aliases[]=fullstack"
           class="underline cursor-pointer"
