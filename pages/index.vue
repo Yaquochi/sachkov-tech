@@ -25,6 +25,7 @@
   background-position: center top;
   min-height: 100vh;
   padding: 40px 100px;
+  overflow: hidden;
 }
 
 .app__content {

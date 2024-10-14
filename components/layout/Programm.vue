@@ -75,6 +75,8 @@
         как Postgresql и MongoDb.
       </li>
     </ul>
+
+    <LayoutStack />
   </section>
 </template>
 
