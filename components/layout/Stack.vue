@@ -39,9 +39,7 @@
     <div class="flex flex-col gap-10">
       <h2 class="section__title">Frontend</h2>
 
-      <ul
-        class="flex flex-row gap-x-[15px] gap-y-[22px] infinityleft pl-[15px] -ml-28"
-      >
+      <ul class="flex flex-row gap-x-[15px] infinityleft pl-[15px] -ml-28">
         <li class="item" v-for="fr in front" :key="fr">{{ fr }}</li>
 
         <li class="item" v-for="fr in front" :key="fr" aria-hidden="true">
@@ -103,7 +101,10 @@ const front = [
   "React Hook Form",
   "Axios",
   "Tailwind",
+  "HTML",
   "CSS",
+  "Grid Layout",
+  "Flexbox",
   "Matrial UI",
   "Vite",
 ];
@@ -162,12 +163,12 @@ const infr = [
 
 .infinityleft {
   width: max-content;
-  animation: stream var(--speed, 20s) linear infinite var(--direction, forwards);
+  animation: stream var(--speed, 30s) linear infinite var(--direction, forwards);
 }
 
 .infinityright {
   width: max-content;
-  animation: stream var(--speed, 20s) linear infinite var(--direction, reverse);
+  animation: stream var(--speed, 30s) linear infinite var(--direction, reverse);
 }
 
 @keyframes stream {

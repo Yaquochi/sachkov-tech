@@ -1,6 +1,8 @@
 <template>
   <section class="w-full flex flex-row gap-10">
-    <div class="section__card flex flex-col justify-between p-10 w-3/5">
+    <div
+      class="section__card flex flex-col justify-between p-10 w-3/5 gap-[50px]"
+    >
       <h1 class="section__title text-8xl font-extrabold tracking-wide">
         .Net Fullstack Development course
       </h1>
