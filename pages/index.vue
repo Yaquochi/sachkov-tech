@@ -9,6 +9,7 @@
       <LayoutWillSuit />
       <LayoutConsistOf />
       <LayoutProgramm />
+      <LayoutWhatYouGet />
     </div>
   </div>
 </template>
