@@ -10,6 +10,7 @@
       <LayoutConsistOf />
       <LayoutProgramm />
       <LayoutWhatYouGet />
+      <LayoutReviews />
     </div>
   </div>
 </template>
