@@ -39,8 +39,8 @@
       </a>
     </div>
 
-    <div class="section__card pt-6 w-2/5">
-      <img src="~/assets/img/author.png" alt="автор." class="w-3/4 mx-auto" />
+    <div class="section__card pt-6 w-2/5 flex flex-col justify-end">
+      <img src="~/assets/img/author.png" alt="автор." class="w-11/12 mx-auto" />
 
       <div class="flex flex-col items-center gap-7 pb-10 px-6">
         <span class="author font-bold text-white">Кирилл Сачков</span>
