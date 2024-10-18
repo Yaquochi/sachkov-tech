@@ -5,7 +5,7 @@
     <div>
 <span class="section__help">*Нажмите два раза, чтобы прочитать отзыв</span>
 
-    <Carousel :itemsToShow="2.5">
+    <Carousel :itemsToShow="3">
       <Slide  v-for="(rev, index) in reviews" :key="index">
         <div
         class="section__card section__card_main w-96"
