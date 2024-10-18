@@ -12,6 +12,7 @@
       <LayoutWhatYouGet />
       <LayoutReviews />
       <LayoutFaq />
+      <LayoutSendForm />
     </div>
   </div>
 </template>
