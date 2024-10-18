@@ -16,9 +16,9 @@
       <li class="card_consult p-9 flex flex-col justify-between">
         <span class="card_consult-text">Остались сомнения?</span>
 
-        <a href="https://t.me/sachkova_mng" class="card_consult-btn"
-          >Получить консультацию</a
-        >
+        <a href="https://t.me/sachkova_mng" class="card_consult-btn">
+          Получить консультацию
+        </a>
       </li>
     </ul>
   </section>

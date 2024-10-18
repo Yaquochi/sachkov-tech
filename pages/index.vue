@@ -11,6 +11,7 @@
       <LayoutProgramm />
       <LayoutWhatYouGet />
       <LayoutReviews />
+      <LayoutFaq />
     </div>
   </div>
 </template>
