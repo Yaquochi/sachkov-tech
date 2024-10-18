@@ -2,18 +2,27 @@
   <section class="section dark">
     <h2 class="section__title">Отзывы наших учеников</h2>
 
-    <ul class="grid grid-cols-4 gap-5">
-      <li
-        class="section__card section__card_main"
-        v-for="(rev, index) in reviews"
-        :key="index"
-        @click="openReview(rev)"
-      >
-        <h4 class="section__card-title">{{ rev.name }}</h4>
+    <div>
+<span class="section__help">*Нажмите два раза, чтобы прочитать отзыв</span>
 
-        <p>{{ rev.text.join(" ") }}</p>
-      </li>
-    </ul>
+    <Carousel :itemsToShow="2.5">
+      <Slide  v-for="(rev, index) in reviews" :key="index">
+        <div
+        class="section__card section__card_main w-96"
+        @dblclick="openReview(rev)"
+      >
+        <h4 class="section__card-title select-none">{{ rev.name }}</h4>
+
+        <p class="select-none">{{ rev.text.join(" ") }}</p>
+      </div>
+      </Slide>
+  
+      <template #addons>
+        <Pagination />
+        <Navigation />
+      </template>
+    </Carousel>
+  </div>
 
     <UModal
       v-model="isOpen"
@@ -180,5 +189,15 @@ const openReview = (rev) => {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.carousel__slide {
+  padding: 15px 10px;
+  width: fit-content !important;
+}
+
+.section__help {
+  margin-left: 15px;
+  color: rgba(255, 255, 255, 0.7);
 }
 </style>
