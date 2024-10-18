@@ -13,6 +13,7 @@
       <LayoutReviews />
       <LayoutFaq />
       <LayoutSendForm />
+      <LayoutFooter />
     </div>
   </div>
 </template>
