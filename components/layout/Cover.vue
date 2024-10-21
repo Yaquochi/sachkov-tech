@@ -1,34 +1,54 @@
 <template>
-  <section class="w-full flex flex-row gap-10">
+  <section
+    class="w-full flex flex-row gap-10 max-[540px]:flex-col max-[540px]:gap-6"
+  >
     <div
-      class="section__card flex flex-col justify-between p-10 w-3/5 gap-[50px]"
+      class="section__card flex flex-col justify-between p-10 w-3/5 gap-[50px] max-[540px]:w-full max-[540px]:p-4 max-[540px]:gap-6"
     >
-      <h1 class="section__title text-8xl font-extrabold tracking-wide">
+      <h1
+        class="section__title text-8xl font-extrabold tracking-wide max-[540px]:text-5xl"
+      >
         .Net Fullstack Development course
       </h1>
 
-      <ul class="flex flex-col gap-6">
-        <li class="flex flex-row items-center">
-          <img src="~/assets/icon/star.png" alt="пункт списка." />
-          <span class="text-white text-xl">
+      <ul class="flex flex-col gap-6 max-[540px]:gap-3">
+        <li class="flex flex-row items-center max-[540px]:items-start">
+          <img
+            src="~/assets/icon/star.png"
+            alt="пункт списка."
+            class="max-[540px]:w-6"
+          />
+          <span class="text-white text-xl max-[540px]:text-base">
             Получишь опыт разработки фулстек приложения с нуля
           </span>
         </li>
-        <li class="flex flex-row items-center">
-          <img src="~/assets/icon/star.png" alt="пункт списка." />
-          <span class="text-white text-xl">
+        <li class="flex flex-row items-center max-[540px]:items-start">
+          <img
+            src="~/assets/icon/star.png"
+            alt="пункт списка."
+            class="max-[540px]:w-6"
+          />
+          <span class="text-white text-xl max-[540px]:text-base">
             Получишь большой пет-проект для портфолио
           </span>
         </li>
-        <li class="flex flex-row items-center">
-          <img src="~/assets/icon/star.png" alt="пункт списка." />
-          <span class="text-white text-xl">
+        <li class="flex flex-row items-center max-[540px]:items-start">
+          <img
+            src="~/assets/icon/star.png"
+            alt="пункт списка."
+            class="max-[540px]:w-6"
+          />
+          <span class="text-white text-xl max-[540px]:text-base">
             Освоишь сложные принципы и концепции разработки
           </span>
         </li>
-        <li class="flex flex-row items-center">
-          <img src="~/assets/icon/star.png" alt="пункт списка." />
-          <span class="text-white text-xl">
+        <li class="flex flex-row items-center max-[540px]:items-start">
+          <img
+            src="~/assets/icon/star.png"
+            alt="пункт списка."
+            class="max-[540px]:w-6"
+          />
+          <span class="text-white text-xl max-[540px]:text-base">
             Поработаешь в команде, как на реальной работе
           </span>
         </li>
@@ -39,17 +59,25 @@
       </a>
     </div>
 
-    <div class="section__card pt-6 w-2/5 flex flex-col justify-end">
+    <div
+      class="section__card pt-6 w-2/5 flex flex-col justify-end max-[540px]:w-full max-[540px]:pt-3.5"
+    >
       <img src="~/assets/img/author.png" alt="автор." class="w-11/12 mx-auto" />
 
-      <div class="flex flex-col items-center gap-7 pb-10 px-6">
+      <div
+        class="flex flex-col items-center gap-7 pb-10 px-6 max-[540px]:pb-3 max-[540px]:px-3 max-[540px]:gap-4"
+      >
         <span class="author font-bold text-white">Кирилл Сачков</span>
 
-        <ul class="flex flex-row gap-6 w-full">
+        <ul class="flex flex-row gap-6 w-full max-[540px]:gap-3.5">
           <li class="flex-1">
             <a href="https://t.me/sachkov_blog" class="section__btn">
               <span class="section__btn-text">Telegram</span>
-              <img src="~/assets/icon/tg.png" alt="телеграм." />
+              <img
+                src="~/assets/icon/tg.png"
+                alt="телеграм."
+                class="max-[540px]:w-5"
+              />
             </a>
           </li>
           <li class="flex-1">
@@ -58,7 +86,11 @@
               class="section__btn"
             >
               <span class="section__btn-text">YouTube</span>
-              <img src="~/assets/icon/yt.png" alt="ютуб." />
+              <img
+                src="~/assets/icon/yt.png"
+                alt="ютуб."
+                class="max-[540px]:w-5"
+              />
             </a>
           </li>
         </ul>
@@ -135,12 +167,38 @@
   box-shadow: 0px 0px 15.1px 0px rgba(198, 135, 234, 0.5) inset;
   color: #0a0119;
   font-size: 18px;
-  line-height: 150%;
   transition: box-shadow 0.2s ease-in-out;
 }
 
 .section__consult-btn:hover {
   box-shadow: 0px 0px 15.1px 0px #e59cff inset;
   transition: box-shadow 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 540px) {
+  .section__card {
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px 0px rgba(198, 135, 234, 0.5) inset;
+  }
+
+  .author {
+    font-size: 28px;
+  }
+
+  .section__btn {
+    padding: 8px 0;
+    border-radius: 8px;
+    gap: 3px;
+  }
+
+  .section__btn:hover {
+    box-shadow: 0 0 7px #e59cff;
+  }
+
+  .section__consult-btn {
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
 }
 </style>
