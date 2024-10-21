@@ -1,13 +1,25 @@
 <template>
-  <header class="header mb-10">
+  <header class="header mb-10 max-[540px]:mb-6">
     <div class="flex flex-row items-center gap-2">
-      <img src="~/assets/icon/code.svg" alt="логотип." />
-      <span class="text-white text-4xl">Sachkov Tech</span>
+      <img
+        src="~/assets/icon/code.svg"
+        alt="логотип."
+        class="max-[540px]:w-8"
+      />
+      <span
+        class="text-white text-4xl max-[540px]:text-xl max-[540px]:!leading-none"
+      >
+        Sachkov Tech
+      </span>
     </div>
 
     <button class="header__btn">
-      <span class="header__btn-text">Записаться на курс</span>
-      <img src="~/assets/icon/star.png" alt="записаться." />
+      <span class="header__btn-text whitespace-nowrap">Записаться на курс</span>
+      <img
+        src="~/assets/icon/star.png"
+        alt="записаться."
+        class="max-[540px]:w-6"
+      />
     </button>
   </header>
 </template>
@@ -59,5 +71,22 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 540px) {
+  .header {
+    padding: 16px 12px;
+    border-radius: 11px;
+    box-shadow: 0px 0px 8px 0px rgba(198, 135, 234, 0.5) inset;
+  }
+
+  .header__btn {
+    border-radius: 12px;
+    font-size: 12px;
+  }
+
+  .header__btn:hover {
+    box-shadow: 0 0 11px #e59cff;
+  }
 }
 </style>

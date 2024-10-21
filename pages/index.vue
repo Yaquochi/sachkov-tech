@@ -38,4 +38,14 @@
   flex-direction: column;
   gap: 140px;
 }
+
+@media screen and (max-width: 540px) {
+  .app {
+    padding: 24px 8px;
+  }
+
+  .app__content {
+    gap: 60px;
+  }
+}
 </style>
