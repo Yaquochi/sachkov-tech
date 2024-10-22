@@ -1,19 +1,25 @@
 <template>
-  <section class="flex flex-col gap-[50px]">
+  <section class="flex flex-col gap-[50px] max-[540px]:gap-6">
     <h2 class="section__title">Из чего состоит курс</h2>
 
-    <ul class="grid grid-cols-2 gap-10 text-white">
+    <ul
+      class="grid grid-cols-2 gap-10 text-white max-[540px]:grid-cols-1 max-[540px]:gap-3"
+    >
       <li class="section__card h-fit" v-for="item in items" :key="item.title">
         <img
           :src="item.img"
           :alt="item.title"
-          class="h-[413px] w-full object-cover rounded-t-3xl"
+          class="h-[413px] w-full object-cover rounded-t-3xl max-[540px]:h-52 max-[540px]:rounded-t-xl"
         />
 
-        <div class="flex flex-col gap-4 p-6 pb-4">
+        <div
+          class="flex flex-col gap-4 p-6 pb-4 max-[540px]:gap-3 max-[540px]:p-4"
+        >
           <h3 class="section__card-title">{{ item.title }}</h3>
 
-          <p class="text-white/80 text-lg">{{ item.descr }}</p>
+          <p class="text-white/80 text-lg max-[540px]:text-base">
+            {{ item.descr }}
+          </p>
 
           <UAccordion
             v-if="item.accTitle"
@@ -27,7 +33,7 @@
             ]"
           >
             <template #item="">
-              <ul class="flex flex-col gap-3">
+              <ul class="flex flex-col gap-3 max-[540px]:gap-1">
                 <li
                   v-for="acc in item.accContent"
                   :key="acc.text"
@@ -36,10 +42,10 @@
                   <img
                     src="~/assets/icon/star.png"
                     alt="пункт."
-                    class="object-contain"
+                    class="object-contain max-[540px]:w-6"
                   />
 
-                  <p class="text-lg text-white">
+                  <p class="text-lg text-white max-[540px]:text-base">
                     <span>{{ acc.title }}</span>
                     {{ acc.text }}
                   </p>
@@ -160,5 +166,19 @@ const items = [
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 540px) {
+  .section__title {
+    font-size: 28px;
+  }
+
+  .section__card {
+    border-radius: 12px;
+  }
+
+  .section__card-title {
+    font-size: 20px;
+  }
 }
 </style>
