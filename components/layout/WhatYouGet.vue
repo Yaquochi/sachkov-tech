@@ -14,7 +14,7 @@
       </li>
     </ul>
 
-    <article class="section__card hidden max-[540px]:flex h-[235px]">
+    <article class="section__card !hidden max-[540px]:flex h-[235px]">
       <h3
         class="section__card-title cardText"
         :class="{ cardTextChange: animation }"

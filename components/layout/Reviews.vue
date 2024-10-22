@@ -3,26 +3,28 @@
     <h2 class="section__title">Отзывы наших учеников</h2>
 
     <div>
-<span class="section__help">*Нажмите два раза, чтобы прочитать отзыв</span>
+      <span class="section__help max-[540px]:text-sm">
+        *Нажмите два раза, чтобы прочитать отзыв
+      </span>
 
-    <Carousel :itemsToShow="3">
-      <Slide  v-for="(rev, index) in reviews" :key="index">
-        <div
-        class="section__card section__card_main w-96"
-        @dblclick="openReview(rev)"
-      >
-        <h4 class="section__card-title select-none">{{ rev.name }}</h4>
+      <Carousel :itemsToShow="$viewport.isLessThan('tablet') ? 1 : 3">
+        <Slide v-for="(rev, index) in reviews" :key="index">
+          <div
+            class="section__card section__card_main w-96 max-[540px]:w-full"
+            @dblclick="openReview(rev)"
+          >
+            <h4 class="section__card-title select-none">{{ rev.name }}</h4>
 
-        <p class="select-none">{{ rev.text.join(" ") }}</p>
-      </div>
-      </Slide>
-  
-      <template #addons>
-        <Pagination />
-        <Navigation />
-      </template>
-    </Carousel>
-  </div>
+            <p class="select-none">{{ rev.text.join(" ") }}</p>
+          </div>
+        </Slide>
+
+        <template #addons>
+          <Pagination />
+          <Navigation v-if="!$viewport.isLessThan('tablet')" />
+        </template>
+      </Carousel>
+    </div>
 
     <UModal
       v-model="isOpen"
@@ -41,6 +43,8 @@
 </template>
 
 <script setup>
+const { $viewport } = useNuxtApp();
+
 const reviews = [
   {
     name: "Александр",
@@ -199,5 +203,34 @@ const openReview = (rev) => {
 .section__help {
   margin-left: 15px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 540px) {
+  .section {
+    gap: 16px;
+  }
+
+  .section__title {
+    font-size: 28px;
+  }
+
+  .section__card {
+    border-radius: 12px;
+    gap: 10px;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .section__card_main {
+    height: 220px;
+  }
+
+  .section__card-title {
+    font-size: 22px;
+  }
+
+  .section__help {
+    margin-left: 0;
+  }
 }
 </style>
