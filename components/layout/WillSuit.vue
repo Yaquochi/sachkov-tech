@@ -1,19 +1,23 @@
 <template>
-  <section class="flex flex-col gap-10">
+  <section class="flex flex-col gap-10 max-[540px]:gap-6">
     <h2 class="section__title">Тебе подойдет курс, если:</h2>
 
-    <ul class="grid grid-cols-2 gap-10">
+    <ul
+      class="grid grid-cols-2 gap-10 max-[540px]:grid-cols-1 max-[540px]:gap-3"
+    >
       <li
         v-for="(item, index) in items"
         :key="index"
-        class="card p-10 flex flex-row items-center gap-10"
+        class="card p-10 flex flex-row items-center gap-10 max-[540px]:flex-col max-[540px]:items-start max-[540px]:p-4 max-[540px]:gap-3"
       >
         <span class="card__number">{{ index + 1 }}</span>
 
         <p class="text-white text-lg">{{ item }}</p>
       </li>
 
-      <li class="card_consult p-9 flex flex-col justify-between">
+      <li
+        class="card_consult p-9 flex flex-col justify-between max-[540px]:p-4 gap-3"
+      >
         <span class="card_consult-text">Остались сомнения?</span>
 
         <a href="https://t.me/sachkova_mng" class="card_consult-btn">
@@ -97,5 +101,35 @@ const items = [
 .card_consult-btn:hover {
   box-shadow: 0px 0px 15.1px 0px #e59cff inset;
   transition: box-shadow 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 540px) {
+  .section__title {
+    font-size: 28px;
+  }
+
+  .card {
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px 0px rgba(198, 135, 234, 0.5) inset;
+  }
+
+  .card__number {
+    font-size: 28px;
+  }
+
+  .card_consult {
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px 0px rgba(198, 135, 234, 0.5) inset;
+  }
+
+  .card_consult-text {
+    font-size: 20px;
+  }
+
+  .card_consult-btn {
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
 }
 </style>
