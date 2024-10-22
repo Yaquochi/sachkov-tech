@@ -2,7 +2,7 @@
   <section class="section">
     <h2 class="section__title">Программа обучения</h2>
 
-    <ul class="flex flex-col gap-10">
+    <ul class="flex flex-col gap-10 max-[540px]:hidden">
       <li class="flex flex-row gap-1 relative">
         <div class="section__card">
           Вы разработаете полноценное веб приложение, состоящее из нескольких
@@ -76,6 +76,52 @@
       </li>
     </ul>
 
+    <ul class="hidden max-[540px]:flex flex-col gap-3">
+      <li class="section__card w-10/12">
+        Вы разработаете полноценное веб приложение, состоящее из нескольких
+        backend сервисов, написанных на C# и ASP.NET Core.
+      </li>
+
+      <li class="mx-auto py-2">
+        <img
+          src="~/assets/icon/lilRightArr.png"
+          alt="стрелка."
+          class="object-contain rotate-[35deg] h-6"
+        />
+      </li>
+
+      <li class="section__card w-10/12 ml-auto">
+        Вы разработаете полноценное веб приложение, состоящее из нескольких
+        backend сервисов, написанных на C# и ASP.NET Core.
+      </li>
+
+      <li class="mx-auto py-2">
+        <img
+          src="~/assets/icon/lilLeftArr.png"
+          alt="стрелка."
+          class="object-contain -rotate-[35deg] h-6"
+        />
+      </li>
+
+      <li class="section__card w-10/12">
+        Вы разработаете полноценное веб приложение, состоящее из нескольких
+        backend сервисов, написанных на C# и ASP.NET Core.
+      </li>
+
+      <li class="mx-auto py-2">
+        <img
+          src="~/assets/icon/lilRightArr.png"
+          alt="стрелка."
+          class="object-contain rotate-[35deg] h-6"
+        />
+      </li>
+
+      <li class="section__total w-10/12 ml-auto">
+        Подробно изучите популярные и эффективные архитектурные подходы к
+        разработке.
+      </li>
+    </ul>
+
     <LayoutStack />
   </section>
 </template>
@@ -122,5 +168,25 @@
   font-size: 28px;
   font-weight: 600;
   line-height: 110%;
+}
+
+@media screen and (max-width: 540px) {
+  .section {
+    gap: 24px;
+  }
+
+  .section__title {
+    font-size: 28px;
+  }
+
+  .section__card {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .section__total {
+    padding: 16px;
+    font-size: 18px;
+  }
 }
 </style>
