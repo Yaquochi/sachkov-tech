@@ -3,7 +3,7 @@
     <h2 class="section__title">Отзывы наших учеников</h2>
 
     <div>
-      <span class="section__help max-[540px]:text-sm">
+      <span class="section__help max-[540px]:hidden">
         *Нажмите два раза, чтобы прочитать отзыв
       </span>
 
@@ -12,6 +12,7 @@
           <div
             class="section__card section__card_main w-96 max-[540px]:w-full"
             @dblclick="openReview(rev)"
+            @click="$viewport.isLessThan('tablet') && openReview(rev)"
           >
             <h4 class="section__card-title select-none">{{ rev.name }}</h4>
 
@@ -30,7 +31,7 @@
       v-model="isOpen"
       :ui="{
         rounded: 'rounded-3xl',
-        width: 'w-3/5 sm:max-w-3/5',
+        width: 'w-3/5 sm:max-w-3/5 max-[540px]:max-w-10/12 max-[540px]:w-10/12',
       }"
     >
       <article class="section__card">
