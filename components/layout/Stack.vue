@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="flex flex-col gap-10">
+    <div class="flex flex-col gap-10 max-[540px]:gap-6">
       <h2 class="section__title">Backend</h2>
 
       <div>
@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <div class="flex flex-col gap-10">
+    <div class="flex flex-col gap-10 max-[540px]:gap-6">
       <h2 class="section__title">Frontend</h2>
 
       <ul class="flex flex-row gap-x-[15px] infinityleft pl-[15px] -ml-28">
@@ -48,7 +48,7 @@
       </ul>
     </div>
 
-    <div class="flex flex-col gap-10">
+    <div class="flex flex-col gap-10 max-[540px]:gap-6">
       <h2 class="section__title">Инфраструктура</h2>
 
       <ul
@@ -174,6 +174,16 @@ const infr = [
 @keyframes stream {
   to {
     transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .section {
+    gap: 24px;
+  }
+
+  .section__title {
+    font-size: 28px;
   }
 }
 </style>
