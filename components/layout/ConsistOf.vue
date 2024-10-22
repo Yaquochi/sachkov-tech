@@ -25,7 +25,7 @@
             v-if="item.accTitle"
             color="white"
             variant="outline"
-            size="xl"
+            :size="$viewport.isLessThan('tablet') ? 'lg' : 'xl'"
             :items="[
               {
                 label: item.accTitle,
@@ -64,6 +64,8 @@ import lesson from "~/assets/img/consist/lesson-ds.jpg";
 import task from "~/assets/img/consist/task.jpg";
 import review from "~/assets/img/consist/review.jpg";
 import chat from "~/assets/img/consist/chat.png";
+
+const { $viewport } = useNuxtApp();
 
 const items = [
   {
