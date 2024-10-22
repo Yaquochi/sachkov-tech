@@ -2,49 +2,103 @@
   <section class="section">
     <h2 class="section__title">Что ты получишь за время обучения</h2>
 
-    <ul class="grid grid-cols-2 gap-10">
-      <li class="section__card">
+    <ul class="grid grid-cols-2 gap-10 max-[540px]:hidden">
+      <li class="section__card" v-for="item in items" :key="item.id">
         <h3 class="section__card-title">
-          Опыт, максимально приближенный к коммерческому
+          {{ item.title }}
         </h3>
 
         <p>
-          Будешь работать над проектом, выполняя поставленные задачи в условиях,
-          как на реальной работе
-        </p>
-      </li>
-
-      <li class="section__card">
-        <h3 class="section__card-title">
-          Освоишь современные <br />
-          технологии
-        </h3>
-
-        <p>
-          Научишься работать с современным стеком на .Net и React на практике
-        </p>
-      </li>
-
-      <li class="section__card">
-        <h3 class="section__card-title">Готовый проект</h3>
-
-        <p>
-          По итогу у тебя будет большой проект для портфолио, который станет
-          твоей визитной карточкой
-        </p>
-      </li>
-
-      <li class="section__card">
-        <h3 class="section__card-title">Освоишь запуск и деплой проекта</h3>
-
-        <p>
-          Ты пройдешь весь путь создания проекта - от создания репозитория до
-          подготовки к запуску и деплоя
+          {{ item.text }}
         </p>
       </li>
     </ul>
+
+    <article class="section__card hidden max-[540px]:flex h-[235px]">
+      <h3
+        class="section__card-title cardText"
+        :class="{ cardTextChange: animation }"
+      >
+        {{ curItem.title }}
+      </h3>
+
+      <p class="cardText" :class="{ cardTextChange: animation }">
+        {{ curItem.text }}
+      </p>
+
+      <div class="flex flex-row gap-2 justify-center mt-auto mb-0">
+        <UButton
+          icon="i-heroicons-arrow-left"
+          size="sm"
+          color="gray"
+          square
+          variant="link"
+          @click="delCurPage"
+        />
+        <span class="text-gray-500">
+          {{ curItemId + "/" + items.length }}
+        </span>
+        <UButton
+          icon="i-heroicons-arrow-right"
+          size="sm"
+          color="gray"
+          square
+          variant="link"
+          @click="addCurPage"
+        />
+      </div>
+    </article>
   </section>
 </template>
+
+<script setup>
+let curItemId = ref(1);
+let animation = ref(false);
+
+const addCurPage = () => {
+  animation.value = true;
+
+  setTimeout(() => {
+    curItemId.value === 4 ? (curItemId.value = 1) : curItemId.value++;
+    animation.value = false;
+  }, 600);
+};
+
+const delCurPage = () => {
+  animation.value = true;
+  setTimeout(() => {
+    curItemId.value === 1 ? (curItemId.value = 4) : curItemId.value--;
+    animation.value = false;
+  }, 600);
+};
+
+const items = [
+  {
+    id: 1,
+    title: "Опыт, максимально приближенный к коммерческому",
+    text: "Будешь работать над проектом, выполняя поставленные задачи в условиях, как на реальной работе",
+  },
+  {
+    id: 2,
+    title: "Освоишь современные технологии",
+    text: "Научишься работать с современным стеком на .Net и React на практике",
+  },
+  {
+    id: 3,
+    title: "Готовый проект",
+    text: "По итогу у тебя будет большой проект для портфолио, который станет твоей визитной карточкой",
+  },
+  {
+    id: 4,
+    title: "Освоишь запуск и деплой проекта",
+    text: "Ты пройдешь весь путь создания проекта - от создания репозитория до подготовки к запуску и деплоя",
+  },
+];
+
+const curItem = computed(() => {
+  return items.find((i) => i.id === curItemId.value);
+});
+</script>
 
 <style scoped>
 .section {
@@ -94,5 +148,34 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 540px) {
+  .section {
+    gap: 24px;
+  }
+
+  .section__title {
+    font-size: 28px;
+  }
+
+  .section__card {
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+  .section__card-title {
+    font-size: 20px;
+  }
+}
+
+.cardText {
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.cardTextChange {
+  transition: opacity 0.5s;
+  opacity: 0;
 }
 </style>
