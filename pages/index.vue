@@ -42,6 +42,7 @@
 @media screen and (max-width: 540px) {
   .app {
     padding: 24px 8px;
+    background-image: url("~/assets/img/bgmobile.png");
   }
 
   .app__content {
