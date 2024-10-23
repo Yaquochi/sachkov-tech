@@ -1,6 +1,6 @@
 <template>
-  <section class="flex flex-row gap-10">
-    <div class="card h-fit">
+  <section class="flex flex-row gap-10 max-[540px]:flex-col max-[540px]:gap-4">
+    <div class="card h-fit max-[540px]:!hidden">
       <h3 class="card__title whitespace-nowrap">Остались вопросы?</h3>
 
       <a href="https://t.me/sachkova_mng" class="card__consult-btn">
@@ -8,20 +8,22 @@
       </a>
     </div>
 
+    <h2 class="hidden max-[540px]:inline title">FAQ</h2>
+
     <UAccordion
       color="white"
       variant="outline"
-      size="xl"
+      :size="$viewport.isLessThan('tablet') ? 'lg' : 'xl'"
       multiple
       :items="faq"
       open-icon="i-heroicons-plus"
       close-icon="i-heroicons-minus"
       :ui="{
         default: {
-          class: 'text-xl mb-2.5 w-full',
+          class: 'text-xl mb-2.5 w-full max-[540px]:text-lg',
         },
         item: {
-          size: 'text-lg',
+          size: 'text-lg max-[540px]:text-base',
         },
       }"
     />
@@ -29,6 +31,8 @@
 </template>
 
 <script setup>
+const { $viewport } = useNuxtApp();
+
 const faq = [
   {
     label: "С чего начинается обучение?",
@@ -99,5 +103,20 @@ const faq = [
 .card__consult-btn:hover {
   box-shadow: 0px 0px 15.1px 0px #e59cff inset;
   transition: box-shadow 0.2s ease-in-out;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 110%;
+  background: linear-gradient(
+    90deg,
+    #e59cff 0.01%,
+    #ba9cff 50.01%,
+    #9cb2ff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
