@@ -36,3 +36,23 @@
 .carousel__pagination-button:hover::after {
   background-color: rgba(229, 156, 255, 0.3);
 }
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: -4px;
+  background-color: rgb(38 38 38) 0.3 !important;
+}
+
+body::-webkit-scrollbar {
+  background-color: rgb(38 38 38);
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5a2bc7;
+  border-radius: 40px;
+}
