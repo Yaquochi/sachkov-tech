@@ -9,5 +9,6 @@
 <script setup lang="ts">
 useHead({
   title: "Sachkov Course",
+  meta: [{ name: "description", content: "Курс" }],
 });
 </script>

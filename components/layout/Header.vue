@@ -13,14 +13,14 @@
       </span>
     </div>
 
-    <button class="header__btn">
+    <a href="https://t.me/sachkova_mng" class="header__btn">
       <span class="header__btn-text whitespace-nowrap">Записаться на курс</span>
       <img
         src="~/assets/icon/star.png"
         alt="записаться."
         class="max-[540px]:w-6"
       />
-    </button>
+    </a>
   </header>
 </template>
 
