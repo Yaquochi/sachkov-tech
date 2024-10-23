@@ -1,30 +1,39 @@
 <template>
-  <section class="flex flex-row gap-8">
-    <div class="card flex flex-col gap-8">
+  <section class="flex flex-row gap-8 max-[540px]:flex-col max-[540px]:gap-4">
+    <div class="card flex flex-col gap-8 max-[540px]:gap-6">
       <h3 class="card__title">Стоимость курса</h3>
 
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-5 max-[540px]:gap-3">
         <div class="flex flex-row items-center gap-2">
-          <img src="~/assets/icon/discount.svg" alt="скидка." class="w-7" />
-          <span class="text-lg">Скидка действует до 31 октября</span>
+          <img
+            src="~/assets/icon/discount.svg"
+            alt="скидка."
+            class="w-7 max-[540px]:w-6"
+          />
+          <span class="text-lg max-[540px]:text-base">
+            Скидка действует до 31 октября
+          </span>
         </div>
 
-        <div class="mb-3">
-          <span class="text-slate-400">
+        <div class="mb-3 max-[540px]:mb-1">
+          <span class="text-slate-400 max-[540px]:text-sm">
             от <span class="line-through">16 990</span> ₽/мес
           </span>
 
-          <div class="flex flex-row items-start gap-2">
-            <span class="text-xl">
-              от <span class="text-4xl font-semibold">11 600</span>
+          <div class="flex flex-row items-start gap-2 max-[540px]:gap-1">
+            <span class="text-xl max-[540px]:text-lg">
+              от
+              <span class="text-4xl font-semibold max-[540px]:text-2xl">
+                11 600
+              </span>
             </span>
-            <span class="text-xl">₽/мес</span>
+            <span class="text-xl max-[540px]:text-base">₽/мес</span>
           </div>
         </div>
 
         <div class="flex flex-col">
           <span class="text-slate-200 text-sm">
-            Учишься сейчас - платишь потом!
+            Учись сейчас - плати потом!
           </span>
           <span class="text-slate-200 text-sm">В рассрочку до 12 месяцев</span>
         </div>
@@ -40,7 +49,11 @@
 
       <a href="https://t.me/sachkova_mng" class="card__btn">
         <span class="card__btn-text">Написать в Telegram</span>
-        <img src="~/assets/icon/tg2.png" alt="телеграм." />
+        <img
+          src="~/assets/icon/tg2.png"
+          alt="телеграм."
+          class="max-[540px]:w-5"
+        />
       </a>
     </div>
   </section>
@@ -96,5 +109,30 @@
   color: #0a0119;
   font-size: 18px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 540px) {
+  .card {
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .card__title {
+    font-size: 28px;
+  }
+
+  .card__descr {
+    font-size: 16px;
+  }
+
+  .card__btn-text {
+    font-size: 16px;
+  }
+
+  .card__btn {
+    border-radius: 12px;
+    padding: 10px 0;
+    gap: 6px;
+  }
 }
 </style>
