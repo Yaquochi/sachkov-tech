@@ -1,12 +1,37 @@
 <template>
-  <footer class="footer flex flex-row justify-between py-6 px-10">
+  <footer
+    class="footer flex flex-row justify-between py-6 px-10 max-[540px]:px-4 max-[540px]:flex-col"
+  >
     <div class="flex flex-col gap-6 justify-between">
-      <div class="flex flex-row items-center gap-2">
+      <div class="flex flex-row items-center gap-2 max-[540px]:mx-auto">
         <img src="~/assets/icon/code.svg" alt="логотип." />
         <span class="text-white text-4xl">Sachkov Tech</span>
       </div>
 
-      <ul class="text-lg text-slate-400 uppercase">
+      <ul class="flex-col gap-3 hidden max-[540px]:flex">
+        <li>
+          <a href="https://t.me/sachkov_blog" class="footer__btn">
+            <span class="footer__btn-text">Telegram</span>
+            <img src="~/assets/icon/tg.png" alt="телеграм." class="w-5" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@KirillSachkov" class="footer__btn">
+            <span class="footer__btn-text">YouTube</span>
+            <img src="~/assets/icon/yt.png" alt="ютуб." class="w-5" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@KirillSachkov" class="footer__btn">
+            <span class="footer__btn-text">Записаться на курс</span>
+            <img src="~/assets/icon/star.png" alt="записаться." class="w-6" />
+          </a>
+        </li>
+      </ul>
+
+      <ul
+        class="text-lg text-slate-400 uppercase max-[540px]:text-base max-[540px]:text-center"
+      >
         <li>ИП САЧКОВ КИРИЛЛ ОЛЕГОВИЧ</li>
         <li>ИНН: 7707083893</li>
         <li>ОГРНИП 324774600480938</li>
@@ -14,13 +39,13 @@
 
       <a
         href="https://drive.google.com/uc?export=download&id=1jePJXm8QE0AuCN8FNZ0BmpdmL7p_aKlK"
-        class="text-lg text-slate-400 underline"
+        class="text-lg text-slate-400 underline max-[540px]:text-base max-[540px]:text-center"
       >
         Оферта
       </a>
     </div>
 
-    <ul class="flex flex-col gap-6">
+    <ul class="flex flex-col gap-6 max-[540px]:hidden">
       <li>
         <a href="https://t.me/sachkov_blog" class="footer__btn">
           <span class="footer__btn-text">Telegram</span>
@@ -83,5 +108,23 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 540px) {
+  .footer {
+    border-radius: 12px;
+    box-shadow: none;
+  }
+
+  .footer__btn {
+    padding: 12px 16px;
+    border-radius: 12px;
+    gap: 4px;
+    height: 43px;
+  }
+
+  .footer__btn:hover {
+    box-shadow: 0 0 8px #e59cff;
+  }
 }
 </style>
