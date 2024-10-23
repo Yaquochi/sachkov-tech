@@ -78,11 +78,13 @@
     padding: 16px 12px;
     border-radius: 11px;
     box-shadow: 0px 0px 8px 0px rgba(198, 135, 234, 0.5) inset;
+    gap: 0;
   }
 
   .header__btn {
     border-radius: 12px;
-    font-size: 12px;
+    font-size: 14px;
+    padding: 8px 10px;
   }
 
   .header__btn:hover {
