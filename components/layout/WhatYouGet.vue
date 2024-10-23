@@ -3,7 +3,7 @@
     <h2 class="section__title">Что ты получишь за время обучения</h2>
 
     <ul class="grid grid-cols-2 gap-10 max-[540px]:hidden">
-      <li class="section__card" v-for="item in items" :key="item.id">
+      <li class="section__card flex" v-for="item in items" :key="item.id">
         <h3 class="section__card-title">
           {{ item.title }}
         </h3>
@@ -14,7 +14,7 @@
       </li>
     </ul>
 
-    <article class="section__card !hidden max-[540px]:flex h-[235px]">
+    <article class="section__card hidden max-[540px]:flex h-[235px]">
       <h3
         class="section__card-title cardText"
         :class="{ cardTextChange: animation }"
@@ -126,7 +126,6 @@ const curItem = computed(() => {
   border-radius: 24px;
   border: 1px solid #e59cff;
   background: rgba(10, 1, 25, 0.6);
-  display: flex;
   flex-direction: column;
   gap: 16px;
   color: rgba(255, 255, 255, 0.8);
