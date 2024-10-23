@@ -7,7 +7,10 @@
         *Нажмите два раза, чтобы прочитать отзыв
       </span>
 
-      <Carousel :itemsToShow="$viewport.isLessThan('tablet') ? 1 : 3">
+      <Carousel
+        :itemsToShow="$viewport.isLessThan('tablet') ? 1 : 3"
+        :wrap-around="$viewport.isLessThan('tablet')"
+      >
         <Slide v-for="(rev, index) in reviews" :key="index">
           <div
             class="section__card section__card_main w-96 max-[540px]:w-full"
