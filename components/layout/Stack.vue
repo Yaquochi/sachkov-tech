@@ -118,6 +118,7 @@ const infr = [
   "Паттерны проектирования",
   "Git",
   "GitHub",
+  "Node JS",
 ];
 </script>
 
