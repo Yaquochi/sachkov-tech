@@ -57,8 +57,13 @@ body::-webkit-scrollbar-thumb {
   border-radius: 40px;
 }
 
-.section__card-span {
-  background: linear-gradient(90deg, #c2b8ff 0%, #5a2bc7 100%);
+.programm-span {
+  background: linear-gradient(
+    90deg,
+    #e59cff 0.01%,
+    #ba9cff 50.01%,
+    #9cb2ff 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
