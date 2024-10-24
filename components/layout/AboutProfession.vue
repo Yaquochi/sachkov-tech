@@ -6,25 +6,30 @@
       <div class="flex flex-col gap-12 max-[540px]:gap-6">
         <h2 class="section__title">О професии</h2>
 
-        <p class="text-xl text-white tracking-wide max-[540px]:text-base">
-          .Net Fullstack разработчик — это универсальный специалист, который
-          может создавать сайты и веб-приложения, работая, как над серверной
-          частью, то есть бэкендом, так и над визуальной, клиентской частью -
-          фронтендом. Поэтому такие разработчики очень ценятся, подумайте сами:
-          компании выгоднее нанять одного специалиста, чем двух - фронтендера и
-          бэкэндера.
-        </p>
+        <div class="flex flex-col gap-2">
+          <p class="text-xl text-white tracking-wide max-[540px]:text-base">
+            .NET Fullstack разработчик способен разрабатывать всё: от
+            высоконагруженных серверных приложений, которые обрабатывают тысячи
+            запросов, до удобных интерфейсов для пользователей. Такой специалист
+            способен разработать веб-приложение “под ключ”, обеспечив слаженную
+            работу всех его компонентов.
+          </p>
+          <p class="text-xl text-white tracking-wide max-[540px]:text-base">
+            Такой специалист очень востребован на рынке, благодаря широкому
+            спектру навыков найти работу для него не составит труда, особенно с
+            учётом высокого спроса на разработчиков, умеющих работать как с
+            бэкендом, так и с фронтендом.
+          </p>
+        </div>
       </div>
 
-      <div>
+      <div class="hidden max-[540px]:block">
         <img
           src="~/assets/icon/lilRightArr.png"
           alt="смотреть."
           class="h-4 -mb-4 arrAnimation"
         />
-        <ul
-          class="flex-row gap-4 overflow-scroll scrollbar-hide hidden max-[540px]:flex"
-        >
+        <ul class="flex-row gap-4 overflow-scroll scrollbar-hide flex">
           <li class="flex flex-col gap-3 py-4 text-white">
             <span
               class="section__card-pay-color text-nowrap font-semibold text-[28px]"

@@ -2,33 +2,27 @@
   <section class="section dark">
     <h2 class="section__title">Отзывы наших учеников</h2>
 
-    <div>
-      <span class="section__help max-[540px]:hidden">
-        *Нажмите два раза, чтобы прочитать отзыв
-      </span>
+    <Carousel
+      :itemsToShow="$viewport.isLessThan('tablet') ? 1 : 3"
+      :wrap-around="$viewport.isLessThan('tablet')"
+      :mouseDrag="false"
+    >
+      <Slide v-for="(rev, index) in reviews" :key="index">
+        <div
+          class="section__card section__card_main w-96 max-[540px]:w-full"
+          @click="openReview(rev)"
+        >
+          <h4 class="section__card-title select-none">{{ rev.name }}</h4>
 
-      <Carousel
-        :itemsToShow="$viewport.isLessThan('tablet') ? 1 : 3"
-        :wrap-around="$viewport.isLessThan('tablet')"
-      >
-        <Slide v-for="(rev, index) in reviews" :key="index">
-          <div
-            class="section__card section__card_main w-96 max-[540px]:w-full"
-            @dblclick="openReview(rev)"
-            @click="$viewport.isLessThan('tablet') && openReview(rev)"
-          >
-            <h4 class="section__card-title select-none">{{ rev.name }}</h4>
+          <p class="select-none">{{ rev.text.join(" ") }}</p>
+        </div>
+      </Slide>
 
-            <p class="select-none">{{ rev.text.join(" ") }}</p>
-          </div>
-        </Slide>
-
-        <template #addons>
-          <Pagination />
-          <Navigation v-if="!$viewport.isLessThan('tablet')" />
-        </template>
-      </Carousel>
-    </div>
+      <template #addons>
+        <Pagination />
+        <Navigation v-if="!$viewport.isLessThan('tablet')" />
+      </template>
+    </Carousel>
 
     <UModal
       v-model="isOpen"
@@ -204,11 +198,6 @@ const openReview = (rev) => {
   width: fit-content !important;
 }
 
-.section__help {
-  margin-left: 15px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
 @media screen and (max-width: 540px) {
   .section {
     gap: 16px;
@@ -231,10 +220,6 @@ const openReview = (rev) => {
 
   .section__card-title {
     font-size: 22px;
-  }
-
-  .section__help {
-    margin-left: 0;
   }
 }
 </style>

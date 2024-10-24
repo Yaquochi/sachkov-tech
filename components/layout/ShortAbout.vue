@@ -42,7 +42,7 @@ const items = [
     icon: resume,
   },
   {
-    label: "Сообщество мотивированных учеников",
+    label: "Работа в команде",
     icon: students,
   },
   {

@@ -59,7 +59,7 @@
         </a>
       </li>
       <li>
-        <a href="https://www.youtube.com/@KirillSachkov" class="footer__btn">
+        <a href="https://t.me/sachkova_mng" class="footer__btn">
           <span class="footer__btn-text">Записаться на курс</span>
           <img src="~/assets/icon/star.png" alt="записаться." />
         </a>
