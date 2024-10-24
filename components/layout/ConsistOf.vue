@@ -59,7 +59,7 @@
 </template>
 
 <script setup>
-import lesson from "~/assets/img/consist/lesson-ds.jpg";
+import lesson from "~/assets/img/consist/lesson.png";
 import task from "~/assets/img/consist/task.png";
 import review from "~/assets/img/consist/review.png";
 import chat from "~/assets/img/consist/chat.png";
