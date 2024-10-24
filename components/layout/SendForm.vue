@@ -1,5 +1,7 @@
 <template>
-  <section class="flex flex-row gap-8 max-[540px]:flex-col max-[540px]:gap-4">
+  <section
+    class="flex flex-row gap-8 max-[540px]:flex-col max-[540px]:gap-4 max-[1300px]:gap-7"
+  >
     <div class="card flex flex-col justify-between gap-6 max-[540px]:gap-3">
       <div class="flex flex-row justify-between items-start">
         <h3 class="card__title">Стоимость курса</h3>
@@ -153,6 +155,30 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1300px) {
+  .card {
+    border-radius: 18px;
+    padding: 32px;
+  }
+
+  .card-disc {
+    padding: 6px 8px;
+  }
+
+  .card-date {
+    border-radius: 16px;
+    padding: 10px 14px;
+  }
+
+  .card__title {
+    font-size: 32px;
+  }
+
+  .card__descr {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 540px) {
