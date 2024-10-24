@@ -57,6 +57,14 @@ body::-webkit-scrollbar-thumb {
   border-radius: 40px;
 }
 
+.section__card-span {
+  background: linear-gradient(90deg, #c2b8ff 0%, #5a2bc7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1300px) {
   .carousel__next {
     right: -35px !important;
