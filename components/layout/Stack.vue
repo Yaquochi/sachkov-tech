@@ -178,6 +178,16 @@ const infr = [
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .section {
+    gap: 32px;
+  }
+
+  .section__title {
+    font-size: 58px;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .section {
     gap: 24px;
