@@ -1,20 +1,24 @@
 <template>
-  <section class="flex flex-row gap-10">
+  <section class="flex flex-row gap-10 max-[1300px]:gap-8">
     <div
-      class="section__card w-3/4 p-10 rounded-3xl flex flex-col justify-between max-[540px]:w-full max-[540px]:p-4 max-[540px]:gap-6"
+      class="section__card w-3/4 p-10 rounded-3xl flex flex-col justify-between gap-8 max-[540px]:w-full max-[540px]:p-4 max-[1300px]:gap-6"
     >
-      <div class="flex flex-col gap-12 max-[540px]:gap-6">
+      <div class="flex flex-col gap-12 max-[540px]:gap-6 max-[1300px]:gap-8">
         <h2 class="section__title">О професии</h2>
 
         <div class="flex flex-col gap-2">
-          <p class="text-xl text-white tracking-wide max-[540px]:text-base">
+          <p
+            class="text-xl text-white tracking-wide max-[540px]:text-base max-[1300px]:text-lg"
+          >
             .NET Fullstack разработчик способен разрабатывать всё: от
             высоконагруженных серверных приложений, которые обрабатывают тысячи
             запросов, до удобных интерфейсов для пользователей. Такой специалист
             способен разработать веб-приложение “под ключ”, обеспечив слаженную
             работу всех его компонентов.
           </p>
-          <p class="text-xl text-white tracking-wide max-[540px]:text-base">
+          <p
+            class="text-xl text-white tracking-wide max-[540px]:text-base max-[1300px]:text-lg"
+          >
             Такой специалист очень востребован на рынке, благодаря широкому
             спектру навыков найти работу для него не составит труда, особенно с
             учётом высокого спроса на разработчиков, умеющих работать как с
@@ -85,35 +89,35 @@
     <div
       class="w-1/4 flex flex-row items-end gap-6 relative max-[540px]:hidden"
     >
-      <ul class="flex flex-col gap-6 w-full">
+      <ul class="flex flex-col gap-6 justify-between h-full w-full">
         <li
-          class="section__card p-10 rounded-2xl flex flex-col items-start gap-6 text-white"
+          class="section__card p-10 rounded-2xl flex flex-col items-start gap-6 text-white max-[1300px]:p-6 max-[1300px]:gap-4"
         >
-          <span class="section__card-pay section__card-pay-color"
-            >от 78 000 руб</span
-          >
-          <span class="text-xl">Junior</span>
+          <span class="section__card-pay section__card-pay-color">
+            от 78 000 руб
+          </span>
+          <span class="text-xl max-[1300px]:text-lg">Junior</span>
         </li>
         <li
-          class="section__card p-10 rounded-2xl flex flex-col items-start gap-6 text-white"
+          class="section__card p-10 rounded-2xl flex flex-col items-start gap-6 text-white max-[1300px]:p-6 max-[1300px]:gap-4"
         >
-          <span class="section__card-pay section__card-pay-color"
-            >от 163 000 руб</span
-          >
-          <span class="text-xl">Middle</span>
+          <span class="section__card-pay section__card-pay-color">
+            от 163 000 руб
+          </span>
+          <span class="text-xl max-[1300px]:text-lg">Middle</span>
         </li>
         <li
-          class="section__card p-10 rounded-2xl flex flex-col items-start gap-6 text-white"
+          class="section__card p-10 rounded-2xl flex flex-col items-start gap-6 text-white max-[1300px]:p-6 max-[1300px]:gap-4"
         >
-          <span class="section__card-pay section__card-pay-color"
-            >от 353 000 руб</span
-          >
-          <span class="text-xl">Lead</span>
+          <span class="section__card-pay section__card-pay-color">
+            от 353 000 руб
+          </span>
+          <span class="text-xl max-[1300px]:text-lg">Lead</span>
         </li>
       </ul>
 
       <span
-        class="text-white text-lg -rotate-90 w-7 whitespace-nowrap absolute -right-12 top-2/3"
+        class="text-white text-lg -rotate-90 w-7 whitespace-nowrap absolute -right-12 top-2/3 max-[1300px]:text-base max-[1300px]:-right-8"
       >
         *По данным
         <a
@@ -184,6 +188,21 @@
 .section__consult-btn:hover {
   box-shadow: 0px 0px 15.1px 0px #e59cff inset;
   transition: box-shadow 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1300px) {
+  .section__title {
+    font-size: 58px;
+  }
+
+  .section__card-pay {
+    font-size: 32px;
+  }
+
+  .section__consult-btn {
+    padding: 20px 28px;
+    border-radius: 16px;
+  }
 }
 
 @media screen and (max-width: 540px) {

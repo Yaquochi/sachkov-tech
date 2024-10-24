@@ -3,12 +3,12 @@
     <h2 class="section__title">Тебе подойдет курс, если:</h2>
 
     <ul
-      class="grid grid-cols-2 gap-10 max-[540px]:grid-cols-1 max-[540px]:gap-3"
+      class="grid grid-cols-2 gap-10 max-[540px]:grid-cols-1 max-[540px]:gap-3 max-[1300px]:gap-8"
     >
       <li
         v-for="(item, index) in items"
         :key="index"
-        class="card p-10 flex flex-row items-center gap-10 max-[540px]:flex-col max-[540px]:items-start max-[540px]:p-4 max-[540px]:gap-3"
+        class="card p-10 flex flex-row items-center gap-10 max-[540px]:flex-col max-[540px]:items-start max-[540px]:p-4 max-[540px]:gap-3 max-[1300px]:p-6 max-[1300px]:gap-6"
       >
         <span class="card__number">{{ index + 1 }}</span>
 
@@ -16,7 +16,7 @@
       </li>
 
       <li
-        class="card_consult p-9 flex flex-col justify-between max-[540px]:p-4 gap-3"
+        class="card_consult p-9 flex flex-col justify-between max-[540px]:p-4 gap-3 max-[1300px]:p-6"
       >
         <span class="card_consult-text">Остались сомнения?</span>
 
@@ -101,6 +101,29 @@ const items = [
 .card_consult-btn:hover {
   box-shadow: 0px 0px 15.1px 0px #e59cff inset;
   transition: box-shadow 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1300px) {
+  .section__title {
+    font-size: 58px;
+  }
+
+  .card {
+    border-radius: 18px;
+  }
+
+  .card__number {
+    font-size: 60px;
+  }
+
+  .card_consult {
+    border-radius: 18px;
+  }
+
+  .card_consult-btn {
+    border-radius: 16px;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 540px) {

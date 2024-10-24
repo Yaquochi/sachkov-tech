@@ -203,7 +203,6 @@
   .section__consult-btn {
     padding: 20px 28px;
     border-radius: 16px;
-    font-size: 16px;
   }
 }
 
@@ -230,6 +229,7 @@
   .section__consult-btn {
     padding: 16px 24px;
     border-radius: 12px;
+    font-size: 16px;
   }
 }
 </style>

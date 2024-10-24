@@ -17,7 +17,7 @@
         >
           <h3 class="section__card-title">{{ item.title }}</h3>
 
-          <p class="text-white/80 text-lg max-[540px]:text-base">
+          <p class="text-white/80 text-lg max-[540px]:text-base min-h-[140px]">
             {{ item.descr }}
           </p>
 
@@ -60,8 +60,8 @@
 
 <script setup>
 import lesson from "~/assets/img/consist/lesson-ds.jpg";
-import task from "~/assets/img/consist/task.jpg";
-import review from "~/assets/img/consist/review.jpg";
+import task from "~/assets/img/consist/task.png";
+import review from "~/assets/img/consist/review.png";
 import chat from "~/assets/img/consist/chat.png";
 
 const { $viewport } = useNuxtApp();
@@ -103,9 +103,9 @@ const items = [
   },
   {
     img: chat,
-    title: "Общие чаты",
+    title: "Доступ к сообществу",
     descr:
-      "Ты сразу получишь доступ к чату в телеграме и серверу в дискорде. Там буду я и все остальные ученики. Там ты сможешь задавать вопросы, общаться в любое время, делать задачи в команде, проводить доклады и собеседования, а также помогать другим, отвечая на их вопросы.",
+      "Ты сразу получишь доступ к сообществу в телеграмме. Там буду я и все остальные ученики. Здесь ты сможешь отправлять задачи на проверку, подключаться к занятиям, задавать вопросы, получать поддержку по техническим вопросам и общаться в любое время.",
   },
 ];
 </script>
