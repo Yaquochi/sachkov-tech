@@ -17,6 +17,10 @@
           item: {
             size: 'text-lg max-[540px]:text-base',
           },
+          transition: {
+            enterActiveClass: 'duration-500',
+            leaveActiveClass: 'duration-500',
+          },
         }"
       >
         <template #item="{ item }">
@@ -38,6 +42,10 @@
           },
           item: {
             size: 'text-lg max-[540px]:text-base',
+          },
+          transition: {
+            enterActiveClass: 'duration-500',
+            leaveActiveClass: 'duration-500',
           },
         }"
       >

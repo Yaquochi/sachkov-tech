@@ -31,6 +31,12 @@
                 label: item.accTitle,
               },
             ]"
+            :ui="{
+              transition: {
+                enterActiveClass: 'duration-500',
+                leaveActiveClass: 'duration-500',
+              },
+            }"
           >
             <template #item="">
               <ul class="flex flex-col gap-3 max-[540px]:gap-1">
