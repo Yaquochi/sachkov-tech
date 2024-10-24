@@ -3,13 +3,13 @@
     <h2 class="section__title">Из чего состоит курс</h2>
 
     <ul
-      class="grid grid-cols-2 gap-10 text-white max-[540px]:grid-cols-1 max-[540px]:gap-3"
+      class="grid grid-cols-2 gap-10 text-white max-[540px]:grid-cols-1 max-[540px]:gap-3 max-[1300px]:gap-7"
     >
       <li class="section__card h-fit" v-for="item in items" :key="item.title">
         <img
           :src="item.img"
           :alt="item.title"
-          class="h-[413px] w-full object-cover rounded-t-3xl max-[540px]:h-52 max-[540px]:rounded-t-xl"
+          class="h-[413px] w-full object-cover rounded-t-3xl max-[540px]:h-52 max-[540px]:rounded-t-xl max-[1300px]:h-80 max-[1300px]:rounded-t-2xl"
         />
 
         <div
@@ -17,7 +17,7 @@
         >
           <h3 class="section__card-title">{{ item.title }}</h3>
 
-          <p class="text-white/80 text-lg max-[540px]:text-base min-h-[140px]">
+          <p class="text-white/80 text-lg max-[1300px]:text-base min-h-[140px]">
             {{ item.descr }}
           </p>
 
@@ -25,7 +25,7 @@
             v-if="item.accTitle"
             color="white"
             variant="outline"
-            :size="$viewport.isLessThan('tablet') ? 'lg' : 'xl'"
+            :size="$viewport.isLessThan('desktopMedium') ? 'lg' : 'xl'"
             :items="[
               {
                 label: item.accTitle,
@@ -42,10 +42,10 @@
                   <img
                     src="~/assets/icon/star.png"
                     alt="пункт."
-                    class="object-contain max-[540px]:w-6"
+                    class="object-contain max-[540px]:w-6 max-[1300px]:w-7"
                   />
 
-                  <p class="text-lg text-white max-[540px]:text-base">
+                  <p class="text-lg text-white max-[1300px]:text-base">
                     {{ acc }}
                   </p>
                 </li>
@@ -71,7 +71,7 @@ const items = [
     img: lesson,
     title: "Онлайн занятия + записи уроков",
     descr:
-      "У вас сразу будет доступ к записям прошедших занятий, общей длительностью 80+ часов, где разобраны ключевые аспекты разработки, и курс продолжает пополняться новыми материалами — каждую неделю проводятся новые занятия, на котрых вы можете присутствовать.",
+      "У вас сразу будет доступ к записям прошедших занятий, общей длительностью 80+ часов, где разобраны ключевые аспекты разработки, и курс продолжает пополняться новыми материалами — каждую неделю проводятся новые занятия, на которых вы можете присутствовать.",
     accTitle: "Что конкретно будет на занятиях и в записях?",
     accContent: [
       "Работа над проектом. Я буду разрабатывать проект с нуля, начиная с проектирования до реализации конкретных фич, используя актуальные подходы коммерческой разработки. Все это ты будешь внедрять в свой проект.",
@@ -145,6 +145,20 @@ const items = [
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1300px) {
+  .section__title {
+    font-size: 58px;
+  }
+
+  .section__card {
+    border-radius: 16px;
+  }
+
+  .section__card-title {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 540px) {

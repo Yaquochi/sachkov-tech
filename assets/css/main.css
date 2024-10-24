@@ -56,3 +56,13 @@ body::-webkit-scrollbar-thumb {
   background-color: #5a2bc7;
   border-radius: 40px;
 }
+
+@media screen and (max-width: 1300px) {
+  .carousel__next {
+    right: -35px !important;
+  }
+
+  .carousel__prev {
+    left: -35px !important;
+  }
+}

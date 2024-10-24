@@ -13,7 +13,7 @@
 		<UAccordion
 			color="white"
 			variant="outline"
-			:size="$viewport.isLessThan('tablet') ? 'lg' : 'xl'"
+			:size="$viewport.isLessThan('desktopMedium') ? 'lg' : 'xl'"
 			multiple
 			:items="faq"
 			open-icon="i-heroicons-plus"
@@ -98,6 +98,7 @@ const faq = [
 	font-size: 20px;
 	line-height: 150%;
 	transition: box-shadow 0.2s ease-in-out;
+	text-wrap: nowrap;
 }
 
 .card__consult-btn:hover {
@@ -118,5 +119,22 @@ const faq = [
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1300px) {
+	.card {
+		border-radius: 24px;
+		padding: 30px;
+	}
+
+	.card__title {
+		font-size: 32px;
+	}
+
+	.card__consult-btn {
+		padding: 14px 52px;
+		border-radius: 18px;
+		font-size: 18px;
+	}
 }
 </style>

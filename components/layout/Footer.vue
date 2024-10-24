@@ -110,6 +110,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 1300px) {
+  .footer {
+    border-radius: 18px;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .footer {
     border-radius: 12px;
