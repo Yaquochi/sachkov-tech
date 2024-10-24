@@ -29,6 +29,7 @@
       :ui="{
         rounded: 'rounded-3xl',
         width: 'w-3/5 sm:max-w-3/5 max-[540px]:max-w-10/12 max-[540px]:w-10/12',
+        container: 'items-center',
       }"
     >
       <article class="section__card">
