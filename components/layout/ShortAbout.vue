@@ -1,13 +1,17 @@
 <template>
   <ul
-    class="grid grid-cols-3 gap-10 max-[540px]:flex max-[540px]:flex-row max-[540px]:gap-3 max-[540px]:overflow-x-scroll max-[540px]:scrollbar-hide listAnimation"
+    class="grid grid-cols-3 gap-10 max-[540px]:flex max-[540px]:flex-row max-[540px]:gap-3 max-[540px]:overflow-x-scroll max-[540px]:scrollbar-hide listAnimation max-[1300px]:gap-7"
   >
     <li
       v-for="item in items"
       :key="item.label"
-      class="card p-10 flex flex-col gap-6 items-center justify-center max-[540px]:py-3 max-[540px]:px-4 max-[540px]:gap-3 max-[540px]:w-56"
+      class="card p-10 flex flex-col gap-6 items-center justify-center max-[540px]:py-3 max-[540px]:px-4 max-[540px]:gap-3 max-[540px]:w-56 max-[1300px]:p-5 max-[1300px]:gap-4"
     >
-      <img :src="item.icon" :alt="item.label" class="max-[540px]:w-10" />
+      <img
+        :src="item.icon"
+        :alt="item.label"
+        class="max-[540px]:w-10 max-[1300px]:w-20"
+      />
 
       <span class="text-white text-lg text-center max-[540px]:text-base">
         {{ item.label }}
@@ -58,6 +62,12 @@ const items = [
   border: 1px solid #e59cff;
   background: rgba(10, 1, 25, 0.6);
   box-shadow: 0px 0px 15.1px 0px rgba(198, 135, 234, 0.5) inset;
+}
+
+@media screen and (max-width: 1300px) {
+  .card {
+    border-radius: 20px;
+  }
 }
 
 @media screen and (max-width: 540px) {
