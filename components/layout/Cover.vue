@@ -1,24 +1,26 @@
 <template>
   <section
-    class="w-full flex flex-row gap-10 max-[540px]:flex-col max-[540px]:gap-6"
+    class="w-full flex flex-row gap-10 max-[540px]:flex-col max-[540px]:gap-6 max-[1300px]:gap-8"
   >
     <div
-      class="section__card flex flex-col justify-between p-10 w-3/5 gap-[50px] max-[540px]:w-full max-[540px]:p-4 max-[540px]:gap-6"
+      class="section__card flex flex-col justify-between p-10 w-3/5 gap-[50px] max-[540px]:w-full max-[540px]:p-4 max-[540px]:gap-6 max-[1300px]:p-6 max-[1300px]:gap-7"
     >
       <h1
-        class="section__title text-8xl font-extrabold tracking-wide max-[540px]:text-5xl"
+        class="section__title text-8xl font-extrabold tracking-wide max-[540px]:text-5xl max-[1300px]:text-7xl"
       >
         .Net Fullstack Development course
       </h1>
 
-      <ul class="flex flex-col gap-6 max-[540px]:gap-3">
+      <ul class="flex flex-col gap-6 max-[540px]:gap-3 max-[1300px]:gap-4">
         <li class="flex flex-row items-center max-[540px]:items-start">
           <img
             src="~/assets/icon/star.png"
             alt="пункт списка."
-            class="max-[540px]:w-6"
+            class="max-[540px]:w-6 max-[1300px]:w-7"
           />
-          <span class="text-white text-xl max-[540px]:text-base">
+          <span
+            class="text-white text-xl max-[540px]:text-base max-[1300px]:text-lg"
+          >
             Получишь опыт разработки фулстек приложения с нуля
           </span>
         </li>
@@ -26,9 +28,11 @@
           <img
             src="~/assets/icon/star.png"
             alt="пункт списка."
-            class="max-[540px]:w-6"
+            class="max-[540px]:w-6 max-[1300px]:w-7"
           />
-          <span class="text-white text-xl max-[540px]:text-base">
+          <span
+            class="text-white text-xl max-[540px]:text-base max-[1300px]:text-lg"
+          >
             Получишь большой пет-проект для портфолио
           </span>
         </li>
@@ -36,9 +40,11 @@
           <img
             src="~/assets/icon/star.png"
             alt="пункт списка."
-            class="max-[540px]:w-6"
+            class="max-[540px]:w-6 max-[1300px]:w-7"
           />
-          <span class="text-white text-xl max-[540px]:text-base">
+          <span
+            class="text-white text-xl max-[540px]:text-base max-[1300px]:text-lg"
+          >
             Освоишь сложные принципы и концепции разработки
           </span>
         </li>
@@ -46,9 +52,11 @@
           <img
             src="~/assets/icon/star.png"
             alt="пункт списка."
-            class="max-[540px]:w-6"
+            class="max-[540px]:w-6 max-[1300px]:w-7"
           />
-          <span class="text-white text-xl max-[540px]:text-base">
+          <span
+            class="text-white text-xl max-[540px]:text-base max-[1300px]:text-lg"
+          >
             Поработаешь в команде, как на реальной работе
           </span>
         </li>
@@ -60,23 +68,25 @@
     </div>
 
     <div
-      class="section__card pt-6 w-2/5 flex flex-col justify-end max-[540px]:w-full max-[540px]:pt-3.5"
+      class="section__card pt-6 w-2/5 flex flex-col justify-end max-[540px]:w-full max-[540px]:pt-3.5 max-[1300px]:pt-4"
     >
       <img src="~/assets/img/author.png" alt="автор." class="w-11/12 mx-auto" />
 
       <div
-        class="flex flex-col items-center gap-7 pb-10 px-6 max-[540px]:pb-3 max-[540px]:px-3 max-[540px]:gap-4"
+        class="flex flex-col items-center gap-7 pb-10 px-6 max-[540px]:pb-3 max-[540px]:px-3 max-[540px]:gap-4 max-[1300px]:pb-6 max-[1300px]:gap-6"
       >
         <span class="author font-bold text-white">Кирилл Сачков</span>
 
-        <ul class="flex flex-row gap-6 w-full max-[540px]:gap-3.5">
+        <ul
+          class="flex flex-row gap-6 w-full max-[540px]:gap-3.5 max-[1300px]:gap-4"
+        >
           <li class="flex-1">
             <a href="https://t.me/sachkov_blog" class="section__btn">
               <span class="section__btn-text">Telegram</span>
               <img
                 src="~/assets/icon/tg.png"
                 alt="телеграм."
-                class="max-[540px]:w-5"
+                class="max-[540px]:w-5 max-[1300px]:w-6"
               />
             </a>
           </li>
@@ -89,7 +99,7 @@
               <img
                 src="~/assets/icon/yt.png"
                 alt="ютуб."
-                class="max-[540px]:w-5"
+                class="max-[540px]:w-5 max-[1300px]:w-6"
               />
             </a>
           </li>
@@ -175,6 +185,28 @@
   transition: box-shadow 0.2s ease-in-out;
 }
 
+@media screen and (max-width: 1300px) {
+  .section__card {
+    border-radius: 16px;
+  }
+
+  .author {
+    font-size: 32px;
+  }
+
+  .section__btn {
+    padding: 10px 0;
+    border-radius: 13px;
+    gap: 6px;
+  }
+
+  .section__consult-btn {
+    padding: 20px 28px;
+    border-radius: 16px;
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .section__card {
     border-radius: 12px;
@@ -198,7 +230,6 @@
   .section__consult-btn {
     padding: 16px 24px;
     border-radius: 12px;
-    font-size: 16px;
   }
 }
 </style>

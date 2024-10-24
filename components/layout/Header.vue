@@ -4,10 +4,10 @@
       <img
         src="~/assets/icon/code.svg"
         alt="логотип."
-        class="max-[540px]:w-8"
+        class="max-[540px]:w-8 max-[1300px]:w-10"
       />
       <span
-        class="text-white text-4xl max-[540px]:text-xl max-[540px]:!leading-none"
+        class="text-white text-4xl max-[540px]:text-xl max-[540px]:!leading-none max-[1300px]:text-3xl"
       >
         Sachkov Tech
       </span>
@@ -18,7 +18,7 @@
       <img
         src="~/assets/icon/star.png"
         alt="записаться."
-        class="max-[540px]:w-6"
+        class="max-[540px]:w-6 max-[1300px]:w-7"
       />
     </a>
   </header>
@@ -71,6 +71,19 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1300px) {
+  .header {
+    padding: 20px 26px;
+    border-radius: 16px;
+  }
+
+  .header__btn {
+    border-radius: 14px;
+    font-size: 16px;
+    padding: 10px 14px;
+  }
 }
 
 @media screen and (max-width: 540px) {

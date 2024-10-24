@@ -46,6 +46,16 @@
   gap: 140px;
 }
 
+@media screen and (max-width: 1300px) {
+  .app__fullcontent {
+    padding: 34px 40px;
+  }
+
+  .app__content {
+    gap: 100px;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .app {
     background-image: url("~/assets/img/bgmobile.png");
