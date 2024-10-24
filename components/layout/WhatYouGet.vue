@@ -2,7 +2,7 @@
   <section class="section">
     <h2 class="section__title">Что ты получишь за время обучения</h2>
 
-    <ul class="grid grid-cols-2 gap-10 max-[540px]:hidden">
+    <ul class="grid grid-cols-2 gap-10 max-[540px]:hidden max-[1300px]:gap-7">
       <li class="section__card flex" v-for="item in items" :key="item.id">
         <h3 class="section__card-title">
           {{ item.title }}
@@ -147,6 +147,25 @@ const curItem = computed(() => {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1300px) {
+  .section {
+    gap: 32px;
+  }
+
+  .section__title {
+    font-size: 58px;
+  }
+
+  .section__card {
+    border-radius: 16px;
+    padding: 20px;
+  }
+
+  .section__card-title {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 540px) {

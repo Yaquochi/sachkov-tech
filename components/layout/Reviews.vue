@@ -9,7 +9,7 @@
     >
       <Slide v-for="(rev, index) in reviews" :key="index">
         <div
-          class="section__card section__card_main w-96 max-[540px]:w-full"
+          class="section__card section__card_main w-96 max-[540px]:w-full max-[1300px]:w-80"
           @click="openReview(rev)"
         >
           <h4 class="section__card-title select-none">{{ rev.name }}</h4>
@@ -198,6 +198,34 @@ const openReview = (rev) => {
   width: fit-content !important;
 }
 
+@media screen and (max-width: 1300px) {
+  .section {
+    gap: 32px;
+  }
+
+  .section__title {
+    font-size: 58px;
+  }
+
+  .section__card {
+    border-radius: 16px;
+    gap: 13px;
+    padding: 18px;
+  }
+
+  .section__card_main {
+    height: 300px;
+  }
+
+  .section__card-title {
+    font-size: 24px;
+  }
+
+  .carousel {
+    padding: 0 20px;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .section {
     gap: 16px;
@@ -220,6 +248,10 @@ const openReview = (rev) => {
 
   .section__card-title {
     font-size: 22px;
+  }
+
+  .carousel {
+    padding: 0;
   }
 }
 </style>
