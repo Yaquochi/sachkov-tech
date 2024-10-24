@@ -126,7 +126,7 @@ const textItems = [
 						данных, такие как <span class="section__card-span">MongoDb</span> и
 						<span class="section__card-span">Redis</span>, брокеры сообщений -
 						<span class="section__card-span">Kafka</span> и
-						<span class="section__card-span">RabbitMQ</span>. Вы поймете зачем и
+						<span class="section__card-span">RabbitMQ</span>. Вы поймете, зачем и
 						как правильно использовать внешние сервисы для вашего приложения.</p>`,
   },
   {
@@ -194,7 +194,7 @@ const textItems = [
     label: "Резюме и собеседования",
     content: `<p>Всё шло к этому моменту, на курсе я подготовлю тебя к
 						<span class="section__card-span">собеседованиям</span> и помогу
-						составить правильно <span class="section__card-span">резюме</span>,
+						правильно составить <span class="section__card-span">резюме</span>,
 						чтобы ты точно получил свой догожданный
 						<span class="section__card-span">оффер</span>. Мы регулярно проводим
 						мок собеседования и созвоны, где обсуждаем текущий рынок в it.</p>`,
