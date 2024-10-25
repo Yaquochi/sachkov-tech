@@ -70,6 +70,7 @@ const { $viewport } = useNuxtApp();
 const firstItem = [
   {
     label: "Архитектура бэкенд приложений",
+    defaultOpen: true,
     content: `<p>Мы подробно изучим и на практике разработаем большой проект,
 						применяя современные архитектурные практики:
 						<span class="programm-span">чистая архитектура</span>,

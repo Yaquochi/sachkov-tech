@@ -31,7 +31,7 @@
         <img
           src="~/assets/icon/lilRightArr.png"
           alt="смотреть."
-          class="h-4 -mb-4 arrAnimation"
+          class="h-4 -mb-4 arrAnimation ml-auto"
         />
         <ul class="flex-row gap-4 overflow-scroll scrollbar-hide flex">
           <li class="flex flex-col gap-3 py-4 text-white">
@@ -223,10 +223,10 @@
 
   @keyframes slidein {
     0% {
-      margin-left: 8%;
+      margin-right: 8%;
     }
     100% {
-      margin-left: 0%;
+      margin-right: 0%;
     }
   }
 }

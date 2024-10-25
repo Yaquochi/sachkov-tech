@@ -7,7 +7,7 @@
         <h3 class="card__title">Стоимость курса</h3>
 
         <span class="card-disc text-xl font-semibold max-[540px]:text-base">
-          -41%
+          -37%
         </span>
       </div>
 
@@ -24,7 +24,7 @@
               <span class="text-xl max-[540px]:text-lg">
                 от
                 <span class="text-4xl font-semibold max-[540px]:text-2xl">
-                  11 800
+                  12 600
                 </span>
               </span>
               <span class="text-xl max-[540px]:text-base">₽/мес</span>
