@@ -2,7 +2,7 @@
   <section
     class="flex flex-row gap-8 max-[540px]:flex-col max-[540px]:gap-4 max-[1300px]:gap-7"
   >
-    <div class="card flex flex-col justify-between gap-6 max-[540px]:gap-3">
+    <div class="card flex flex-col justify-between gap-7 max-[540px]:gap-4">
       <div class="flex flex-row justify-between items-start">
         <h3 class="card__title">Стоимость курса</h3>
 
@@ -11,10 +11,47 @@
         </span>
       </div>
 
+      <ul class="flex flex-col gap-1">
+        <li class="flex flex-row gap-2">
+          <img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+          <span class="text-lg max-[1300px]:text-base">
+            36 записей занятий по два часа
+          </span>
+        </li>
+        <li class="flex flex-row gap-2">
+          <img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+          <span class="text-lg max-[1300px]:text-base"> 80 заданий </span>
+        </li>
+        <li class="flex flex-row gap-2">
+          <img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+          <span class="text-lg max-[1300px]:text-base">
+            Онлайн занятия 3 раза в неделю
+          </span>
+        </li>
+        <li class="flex flex-row gap-2">
+          <img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+          <span class="text-lg max-[1300px]:text-base">
+            Регулярное код-ревью
+          </span>
+        </li>
+        <li class="flex flex-row gap-2">
+          <img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+          <span class="text-lg max-[1300px]:text-base">
+            Подготовка к собеседованию
+          </span>
+        </li>
+        <li class="flex flex-row gap-2">
+          <img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+          <span class="text-lg max-[1300px]:text-base">
+            Помощь в составлении резюме
+          </span>
+        </li>
+      </ul>
+
       <div
-        class="flex flex-row justify-between max-[540px]:flex-col max-[540px]:gap-5"
+        class="flex flex-row justify-between items-end gap-3 max-[540px]:flex-col max-[540px]:items-start max-[540px]:gap-4"
       >
-        <div class="flex flex-col gap-5 max-[540px]:gap-3">
+        <div class="flex flex-col gap-4 max-[540px]:gap-2">
           <div class="mb-4 max-[540px]:mb-2">
             <span class="text-slate-400 max-[540px]:text-sm">
               от <span class="line-through">20 000</span> ₽/мес
@@ -57,7 +94,7 @@
       </div>
     </div>
 
-    <div class="card flex flex-col justify-between gap-8">
+    <div class="card flex flex-col justify-between gap-8 h-fit">
       <h3 class="card__title">Хочешь стать крутым разработчиком?</h3>
 
       <span class="card__descr">
