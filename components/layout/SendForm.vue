@@ -46,6 +46,10 @@
 						Помощь в составлении резюме
 					</span>
 				</li>
+				<li class="flex flex-row gap-2">
+					<img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+					<span class="text-lg max-[1300px]:text-base"> Доступ навсегда </span>
+				</li>
 			</ul>
 
 			<div
