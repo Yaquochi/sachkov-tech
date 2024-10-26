@@ -4,7 +4,7 @@
 			class="section__card w-3/4 p-10 rounded-3xl flex flex-col justify-between gap-8 max-[540px]:w-full max-[540px]:p-4 max-[1300px]:gap-6"
 		>
 			<div class="flex flex-col gap-12 max-[540px]:gap-6 max-[1300px]:gap-8">
-				<h2 class="section__title">О професии</h2>
+				<h2 class="section__title">О профессии</h2>
 
 				<div class="flex flex-col gap-2">
 					<p
