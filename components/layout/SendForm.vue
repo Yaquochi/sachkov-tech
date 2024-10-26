@@ -7,7 +7,7 @@
 				<h3 class="card__title">Стоимость курса</h3>
 
 				<span class="card-disc text-xl font-semibold max-[540px]:text-base">
-					-37%
+					-33%
 				</span>
 			</div>
 
@@ -58,14 +58,14 @@
 				<div class="flex flex-col gap-4 max-[540px]:gap-2">
 					<div class="mb-4 max-[540px]:mb-2">
 						<span class="text-slate-400 max-[540px]:text-sm">
-							от <span class="line-through">20 000</span> ₽/мес
+							от <span class="line-through">13 333</span> ₽/мес
 						</span>
 
 						<div class="flex flex-row items-start gap-2 max-[540px]:gap-1">
 							<span class="text-xl max-[540px]:text-lg">
 								от
 								<span class="text-4xl font-semibold max-[540px]:text-2xl">
-									12 600
+									8 889
 								</span>
 							</span>
 							<span class="text-xl max-[540px]:text-base">₽/мес</span>
@@ -77,7 +77,7 @@
 							Учись сейчас - плати потом!
 						</span>
 						<span class="text-slate-200 text-sm">
-							В рассрочку до 12 месяцев
+							В рассрочку до 18 месяцев
 						</span>
 					</div>
 				</div>
