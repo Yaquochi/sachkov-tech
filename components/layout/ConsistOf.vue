@@ -36,6 +36,10 @@
 								enterActiveClass: 'duration-500',
 								leaveActiveClass: 'duration-500',
 							},
+							default: {
+								class: 'text-left',
+								truncate: false,
+							},
 						}"
 					>
 						<template #item="">
