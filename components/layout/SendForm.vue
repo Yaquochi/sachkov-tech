@@ -99,7 +99,9 @@
 		</div>
 
 		<div class="card flex flex-col justify-between gap-8 h-fit">
-			<h3 class="card__title">Хочешь стать крутым разработчиком?</h3>
+			<h3 class="card__title">
+				Хочешь стать крутым разработчиком и получать большую зарплату?
+			</h3>
 
 			<span class="card__descr">
 				Напиши нам в телеграмм, ответим на любые вопросы!
