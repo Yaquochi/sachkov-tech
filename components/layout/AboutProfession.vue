@@ -70,15 +70,7 @@
 					</li>
 				</ul>
 
-				<span class="text-white opacity-[.6] text-xs">
-					*По данным
-					<a
-						href="https://career.habr.com/salaries?spec_aliases[]=fullstack"
-						class="underline cursor-pointer"
-					>
-						Хабр
-					</a>
-				</span>
+				<span class="text-white opacity-[.6] text-xs"> *Средняя зарплата </span>
 			</div>
 
 			<a href="https://t.me/sachkova_mng" class="section__consult-btn">
@@ -119,13 +111,7 @@
 			<span
 				class="text-white text-lg -rotate-90 w-7 whitespace-nowrap absolute -right-12 top-2/3 max-[1300px]:text-base max-[1300px]:-right-8"
 			>
-				*По данным
-				<a
-					href="https://career.habr.com/salaries?spec_aliases[]=fullstack"
-					class="underline cursor-pointer"
-				>
-					Хабр
-				</a>
+				*Средняя зарплата
 			</span>
 		</div>
 	</section>

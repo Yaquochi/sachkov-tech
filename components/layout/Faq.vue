@@ -20,7 +20,8 @@
 			close-icon="i-heroicons-minus"
 			:ui="{
 				default: {
-					class: 'text-xl mb-2.5 w-full max-[540px]:text-lg',
+					class: 'text-xl mb-2.5 w-full max-[540px]:text-lg text-left',
+					truncate: false,
 				},
 				item: {
 					size: 'text-lg max-[540px]:text-base',
