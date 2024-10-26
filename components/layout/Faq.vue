@@ -25,6 +25,7 @@
 				},
 				item: {
 					size: 'text-lg max-[540px]:text-base',
+					color: 'text-white/80',
 				},
 				transition: {
 					enterActiveClass: 'duration-500',
