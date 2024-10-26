@@ -64,7 +64,7 @@
 						<span
 							class="section__card-pay-color text-nowrap font-semibold text-[28px]"
 						>
-							353 000 руб
+							400 000 руб
 						</span>
 						<span>Lead</span>
 					</li>
@@ -102,7 +102,7 @@
 					class="section__card p-10 rounded-2xl flex flex-col items-start gap-6 text-white max-[1300px]:p-6 max-[1300px]:gap-4"
 				>
 					<span class="section__card-pay section__card-pay-color">
-						353 000 руб
+						400 000 руб
 					</span>
 					<span class="text-xl max-[1300px]:text-lg">Lead</span>
 				</li>
