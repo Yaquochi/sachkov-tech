@@ -60,6 +60,18 @@
 						Поработаешь в команде, как на реальной работе
 					</span>
 				</li>
+				<li class="flex flex-row items-center max-[540px]:items-start">
+					<img
+						src="~/assets/icon/star.png"
+						alt="пункт списка."
+						class="max-[540px]:w-6 max-[1300px]:w-7"
+					/>
+					<span
+						class="text-white text-xl max-[540px]:text-base max-[1300px]:text-lg"
+					>
+						Получиь все необходимые навыки для трудоустройства
+					</span>
+				</li>
 			</ul>
 
 			<a href="https://t.me/sachkova_mng" class="section__consult-btn">
