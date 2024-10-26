@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="footer flex flex-row justify-between py-6 px-10 max-[540px]:px-4 max-[540px]:flex-col"
+    class="footer flex flex-row justify-between gap-4 py-6 px-10 max-[540px]:px-4 max-[540px]:flex-col"
   >
     <div class="flex flex-col gap-6 justify-between">
       <div class="flex flex-row items-center gap-2 max-[540px]:mx-auto">
@@ -33,16 +33,30 @@
         class="text-lg text-slate-400 uppercase max-[540px]:text-base max-[540px]:text-center"
       >
         <li>ИП САЧКОВ КИРИЛЛ ОЛЕГОВИЧ</li>
-        <li>ИНН: 7707083893</li>
+        <li>ИНН: 771004514845</li>
         <li>ОГРНИП 324774600480938</li>
       </ul>
 
-      <a
-        href="https://drive.google.com/uc?export=download&id=1jePJXm8QE0AuCN8FNZ0BmpdmL7p_aKlK"
-        class="text-lg text-slate-400 underline max-[540px]:text-base max-[540px]:text-center"
-      >
-        Оферта
-      </a>
+      <div class="flex flex-row gap-x-3 gap-y-2 flex-wrap max-[540px]:flex-col">
+        <a
+          href="https://disk.yandex.ru/i/1Y9RbK_8thY_og"
+          class="text-lg text-slate-400 underline max-[540px]:text-base max-[540px]:text-center !leading-tight"
+        >
+          Оферта
+        </a>
+        <a
+          href="https://disk.yandex.ru/i/xlzshXFZEJ66mg"
+          class="text-lg text-slate-400 underline max-[540px]:text-base max-[540px]:text-center !leading-tight"
+        >
+          Политика конфиденциальности
+        </a>
+        <a
+          href="https://disk.yandex.ru/i/vv_CODqkKaPgzA"
+          class="text-lg text-slate-400 underline max-[540px]:text-base max-[540px]:text-center !leading-tight"
+        >
+          Согласие на обработку персональных данных
+        </a>
+      </div>
     </div>
 
     <ul class="flex flex-col gap-6 max-[540px]:hidden">
