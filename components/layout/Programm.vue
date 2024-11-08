@@ -38,7 +38,8 @@
 				:ui="{
 					default: {
 						class:
-							'text-2xl w-full max-[540px]:text-lg border-t rounded-none py-5 max-[1300px]:py-4',
+							'text-2xl text-left w-full max-[540px]:text-lg border-t rounded-none py-5 max-[1300px]:py-4',
+						truncate: false,
 					},
 					item: {
 						size: 'text-lg max-[540px]:text-base',
@@ -72,28 +73,23 @@ const firstItem = [
 	{
 		label: "Архитектура бэкенд приложений",
 		defaultOpen: true,
-		content: `<p>Мы подробно изучим и на практике разработаем большой проект,
-						применяя современные архитектурные практики:
-						<span class="programm-span">чистая архитектура</span>,
-						<span class="programm-span">CQRS</span>,
-						<span class="programm-span">DDD</span>,
-						<span class="programm-span">модульный монолит</span> и
-						<span class="programm-span">микросервисы</span>.  Постепенно мы
-						перейдем от монолитной архитектуры к микросервисной, используя различные современные технологии.
-            Ты наконец-то поймёшь, как и зачем применять весь этот стэк.</p>`,
+		content: `<p>Мы глубоко погрузимся в современные <span class="programm-span">архитектурные подходы</span>, реализуя крупный проект, который начинается с <span class="programm-span">монолитной структуры</span> и постепенно переходит в <span class="programm-span">микросервисную архитектуру</span>. Вы освоите <span class="programm-span">чистую архитектуру</span>, <span class="programm-span">CQRS</span>, <span class="programm-span">DDD</span>, <span class="programm-span">модульный монолит</span> и <span class="programm-span">микросервисы</span>. Особое внимание уделяется пониманию принципов, зачем и как использовать этот стек для создания <span class="programm-span">гибких и устойчивых систем</span>, способных <span class="programm-span">масштабироваться</span>. Это включает также взаимодействие <span class="programm-span">фронтенда и бэкенда</span> в большом проекте, что даст вам полное представление о современных архитектурных решениях.</p>`,
 	},
 ];
 
 const textItems = [
 	{
-		label: "Работа с базой данных",
+		label: "Реляционные и неряционные базы данных",
 		content: `<p>Практически ни одно бэкенд приложение не обходится без базы данных.
 						В этом курсе мы подробно изучим как работать с
-						<span class="programm-span">EF Core</span> и
-						<span class="programm-span">Dapper</span>, проектировать базу
+						<span class="programm-span">PostgreSQL</span>,
+						<span class="programm-span">MongoDb</span>
+						<span class="programm-span">Redis</span>.
+						На практике поработаем с <span class="programm-span">EF Core</span> и
+						<span class="programm-span">Dapper</span>. Научимся проектировать базу
 						данных, настривать сложные конфигурции для анемичных и богатых моделей,
-            писать сложные запросы, применять фильтрацию, пагинацию, сортировку, join'ы, управлять транзакциями и блокировками.
-            Взаимодействовать с базой данных мы будем, как в реальной разработке.</p>`,
+            писать сложные запросы, применять фильтрацию, пагинацию, сортировку, делать выборки и управлять транзакциями и блокировками.
+			Все эти знания вам обязательно понадобятся на реально работе и будут украшать ваше резюме.</p>`,
 	},
 	{
 		label: "ASP.NET Core",
@@ -101,109 +97,112 @@ const textItems = [
 						масштабируемые и производительные
 						<span class="programm-span">Web API</span> приложения с помощью
 						<span class="programm-span">ASP.NET Core</span>. Вы научитесь
-						работать с <span class="programm-span">конфигурацией</span>,
+						работать с <span class="programm-span">конфигурациями</span>,
 						<span class="programm-span">логированием</span>,
 						<span class="programm-span">контроллерами</span>,
-						<span class="programm-span">swagger</span>,
+						<span class="programm-span">Minimal Api</span>,
+						<span class="programm-span">Swagger</span>,
 						<span class="programm-span">роутингом</span>,
-						<span class="programm-span">middleware</span>,
+						<span class="programm-span">Middleware</span>,
 						<span class="programm-span">аутентификацией</span> и
 						<span class="programm-span">авторизацией</span>,
 						<span class="programm-span">атрибутами</span> и
-						<span class="programm-span">фильтрами</span>.</p>`,
+						<span class="programm-span">фильтрами</span>.
+						Почти все наши сервисы будут иметь web api интерфейс для взаимодействия с внешним миром.
+						ASP.NET Core очень упрощает разработку веб приложений, сейчас данный фреймворк является стандартом индустрии.</p>`,
 	},
 	{
 		label: "Аутентификация и авторизация",
 		content: `<p>На курсе мы подробно разбираем современные подходы к аутентифицации и авторизации на ASP.NET Core с помощью <span class="programm-span">jwt токенов</span>,
                 <span class="programm-span">ролей</span> и <span class="programm-span">разрешений</span>. Мы реализуем аутентификацию не только в монолитном приложении,
-                но и в микросервисервесной архитектуре. Также мы реализуем аутентификацию и авторизацию в фронтенд приложении.</p>`,
+                но и в микросервисервесной архитектуре. Также мы реализуем аутентификацию и авторизацию на фронтенде. Подтверждение по почте,
+				восстановление пароля, блокировка пользователей, сложная ролевая система с разрешениями, всё это мы реализуем на проекте.</p>`,
 	},
 	{
 		label: "Реальные бизнес задачи",
 		content: `<p>Решение большого количества задач из реальной разработки. Вы на
 						практике будете решать непростые бизнес задачи, с которыми обычно сталкиваются на работе:
 						<span class="programm-span"> CRUD операции</span>,
-						<span class="programm-span">
-						взаимодействие между модулями и микросервисами</span>,
-            <span class="programm-span">валидация и ошибки</span>,
+						<span class="programm-span">взаимодействие между несколькими модулями и сервисами</span>,
+            			<span class="programm-span">валидация и ошибки</span>,
+            			<span class="programm-span">многоэтапные фичи</span>,
+            			<span class="programm-span">согласованность данных между сервисами</span>,
 						<span class="programm-span">сложная бизнес логика</span>,
-						<span class="programm-span"> состояния и события</span>.</p>`,
+						<span class="programm-span">отложенные задачи</span>,
+						<span class="programm-span">работа с состоянияни и событиями</span>.</p>`,
 	},
 	{
-		label: "Инфраструктура",
-		content: `<p>Сегодня современные веб приложения постоянно взаимодействуют с
-						внешними сервисами, будь то
-						<span class="programm-span">S3 хралища</span>, например
-						<span class="programm-span">MinIO</span>, нереляционные базы
-						данных, такие как <span class="programm-span">MongoDb</span> и
-						<span class="programm-span">Redis</span>, брокеры сообщений -
-						<span class="programm-span">Kafka</span> и
-						<span class="programm-span">RabbitMQ</span>. Вы поймете, зачем и
-						как правильно использовать внешние сервисы для вашего приложения.
-            Как они могут помочь с решением бизнес задач, с масштабированием и отказоустойчивости вашего проекта, всё это подробно изучим на практике.</p>`,
+		label: "Amazon S3",
+		content: `<p>Довольно часто бэкенд и фронтенд приложения взаимодействуют с файлами, фото и видео. Сегодняшним стандартом для
+			работы с таким типом данных является Amazon S3. На курсе вы на практике научитесь работать с файлами с помощью MinIO или Yandex Clound
+			с помощью Amazon S3. Умение работать с S3 хранилищем очень ценится работодателями и точно пригодится во время работы.</p>`,
 	},
 	{
-		label: "Тестирование",
-		content: `<p>На курсе вы изучите, что такое
-						<span class="programm-span">юнит</span> и
-						<span class="programm-span">интеграционные тестирование</span>
-						и на практике напишите тесты для различных сервисов.
-            Вы поймете, какой функционал нужно покрывать тестами, какие виды тестов бывают и без каких тестов не может обойтись любое сложное приложение.</p>`,
+		label: "Юнит и итеграционное тестирование",
+		content: `<p>Для начала на курсе вы познакомитесь с <span class="programm-span">юнит тестами</span>, покроете ими основую бизнес логику и доменные сущности.
+			Дальше вы познакомитесь с <span class="programm-span">интеграционным тестированием</span>, с <span class="programm-span">DevContainers</span>
+			вы протестируете работу между различными сервисами в вашем проекте.
+			Сегодня тестирование является очень важным компонентом индустрии, без тестов вашему проекту будет очень сложно масштабироваться.</p>`,
 	},
 	{
-		label: "Docker и Docker compose",
+		label: "Docker, Docker compose и Nginx",
 		content: `<p>Вы обязательно запустите своё приложение и множество различных
 						сервисов в <span class="programm-span">Docker</span> с помощью
-						<span class="programm-span">Docker compose</span>. Владение
-						навыками и понимание контейнеризации сегодня является стандартом для
+						<span class="programm-span">Docker compose</span>. Также мы настроим Nginx, как прокси сервер для взаимодействия клиента
+						с сервером. Владение навыками и понимание контейнеризации сегодня является стандартом для
 						каждого разработчика.</p>`,
 	},
 	{
-		label: "Фоновые процессы и задачи",
+		label: "Фоновые процессы и задачи с Hangfire или Quartz",
 		content: `<p>На курсе вы научитель работать с
 						<span class="programm-span">background сервисами</span>,
 						<span class="programm-span">Quartz</span> и
 						<span class="programm-span">Hangfire</span> для работы с
-						различными фоновыми задачами, сегодня background сервиса используются
-            для многих задач, такие как: consumer-процессы, расписания, сервисы для поддержки консистентности данных, телеграм боты и другие.</p>`,
+						различными фоновыми или отложенными задачами. Фоновые сервисы используются
+            			для многих задач, такие как: consumer-процессы, расписания, отложенные задачи,
+						сервисы для поддержки консистентности и согласованности данных, отправка уведомлений и другие.</p>`,
 	},
 	{
 		label: "Модульный монолит и микросервисы",
-		content: `<p>Научись на практике создавать
-						<span class="programm-span">модульные</span> и
-						<span class="programm-span">распределённые системы</span> для
-						достижения максимальной производительности и масштабируемости.
-						Сегодня это ялвяется стандартом индустрии. Даже от джуниор разработчиков могут требовать знания о распределённых системах.</p>`,
+		content: `<p>Для начала мы начнём создавать наше приложение с модульного монолита. Далее вы разделите монолит на модульный,
+			тем самым обеспечите удобное разделение логики и независимость между модулями. Далее мы начнём отделять части приложения на отдельные
+			микросервисы. Научимся взаимодействовать с ними по <span class="programm-span">HTTP</span>, <span class="programm-span">GRPC</span>
+			и с помощью <span class="programm-span">брокеров сообщений</span>, такие как <span class="programm-span">RabbitMQ</span>,
+			<span class="programm-span">Redis</span> и <span class="programm-span">Kafka</span>.
+			Сегодня распределённые системы являются стандартом индустрии. Они нужны для достижения максимальной производительности и масштабируемости.</p>`,
 	},
 	{
-		label: "Kafka, RabbitMq, Redis",
-		content: `<p>На курсе вы освоите, как применять такие сложные технологии как:
-						<span class="programm-span">Kafka</span>,
-						<span class="programm-span">RabbitMq</span> и
-						<span class="programm-span">Redis</span>. Благодаря
-						<span class="programm-span">Redis</span> мы освоим
-						распределённое кэширование. С помощью
-						<span class="programm-span">RabbitMq</span> и
-						<span class="programm-span">Kafka</span> мы сможем реализовать
-						событийно ориентированную архитектуру.</p>`,
+		label: "Кэширование и распределённый кэш с Redis",
+		content: `<p>На курсе вы освоите работу с кэширование. Для начала мы изучим MemoryCache, далее реализуем распределённое кэширование
+			с помощью <span class="programm-span">Redis</span>. Сегодня кэширование очень важно для работы с большим количеством данных.
+			Мы научимся инвалидировать кэш и учитывать сложные моменты при работе с кэшом.</p>`,
 	},
 	{
-		label: "React, TypeScript и Tailwind",
+		label:
+			"Доменные и интеграционные события. Брокеры сообщений: RabbitMq и Kafka",
+		content: `<p>На курсе мы обязательно поработаем с <span class="programm-span">RabbitMq</span>
+			и <span class="programm-span">Kafka</span>. Брокеры сообщений очень полезны для асинхронного взаимодействия между
+			сервисами. Также с помощью брокеров можно реализовать событийную архитектуру. Мы внедрим в наш проект доменные
+			и интеграционные события.</p>`,
+	},
+	{
+		label: "React, TypeScript, Axios, Tailwind",
 		content: `<p>Сегодня очень ценятся именно
-						<span class="programm-span">fullstack</span> разработчики.
+						<span class="programm-span">Fullstack</span> разработчики.
 						Поэтому на этом курсе мы изучим, как для вашего бэкенда сделать
 						фронтенд на <span class="programm-span">React</span>. Вы
 						разработаете полноценное фронтенд приложение и каждый сможет им
-						воспользоваться.</p>`,
+						воспользоваться. С таким стэком будет намного проще получить хороший оффер, и ваше резюме будет выделяться среди других</p>`,
 	},
 	{
-		label: "Redux, Axios, Rtk query",
+		label: "Redux и Rtk query",
 		content: `<p>Здесь вы сможете на практике связать фронтенд приложение с бэкендом,
 						отправлять запросы с помощью
 						<span class="programm-span">axios</span> и
 						<span class="programm-span">rtk query</span>, а также управлять
 						состоянием приложения с помощью
-						<span class="programm-span">Redux</span>.</p>`,
+						<span class="programm-span">Redux</span>. 
+						Мы посмотрим на различные способы оптимизации фронтенд приложений, чтобы ваше Api не умерало от большого количества запросов</p>`,
 	},
 	{
 		label: "Резюме и собеседования",
@@ -217,8 +216,8 @@ const textItems = [
 	{
 		label: "CI/CD",
 		content: `<p>На курсе ты освоишь все необходимые навыки CI/CD, который требуются от бэкенд разработчиков.
-            Освой <span class="programm-span">Github Actions</span> и деплой проекта на сервер. Ты на
-						практике сможешь развернуть своё веб приложение, чтобы все могли им воспользоваться!</p>`,
+		Освой <span class="programm-span">Github Actions</span> и деплой проекта на сервер.
+		Ты на практике сможешь развернуть своё веб приложение, чтобы все могли им воспользоваться!</p>`,
 	},
 ];
 </script>
