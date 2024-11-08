@@ -6,9 +6,9 @@
       <div class="flex flex-row justify-between items-start">
         <h3 class="card__title">Стоимость курса</h3>
 
-        <span class="card-disc text-xl font-semibold max-[540px]:text-base">
+        <!-- <span class="card-disc text-xl font-semibold max-[540px]:text-base">
           -33%
-        </span>
+        </span> -->
       </div>
 
       <ul class="flex flex-col gap-1">
@@ -57,9 +57,9 @@
       >
         <div class="flex flex-col gap-4 max-[540px]:gap-2">
           <div class="mb-4 max-[540px]:mb-2">
-            <span class="text-slate-400 max-[540px]:text-sm">
+            <!-- <span class="text-slate-400 max-[540px]:text-sm">
               от <span class="line-through">13 333</span> ₽/мес
-            </span>
+            </span> -->
 
             <div class="flex flex-row items-start gap-2 max-[540px]:gap-1">
               <span class="text-xl max-[540px]:text-lg">
@@ -91,8 +91,7 @@
             class="w-8 max-[540px]:w-6"
           />
           <span class="card__disc-text text-lg max-[540px]:text-base">
-            Скидка действует<br class="max-[540px]:hidden" />
-            до 30 ноября
+            Скидка 20% при оплате сразу!
           </span>
         </div>
       </div>
