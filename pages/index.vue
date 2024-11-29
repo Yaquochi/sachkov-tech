@@ -1,5 +1,13 @@
 <template>
   <div class="app">
+    <div
+      class="bg-black text-white sticky top-0 left-0 right-0 w-full px-10 py-6 flex flex-row justify-center items-center divide-x drop-shadow-xl z-50"
+    >
+      <h2 class="uppercase text-3xl px-3">черная пятница</h2>
+      <span class="text-xl px-3">29.11 - 01.12</span>
+      <h2 class="uppercase text-3xl px-3">скидки до 20%</h2>
+    </div>
+
     <div class="app__fullcontent">
       <LayoutHeader />
 
@@ -49,13 +57,14 @@
   background-size: cover;
   background-position: center top;
   min-height: 100vh;
-  overflow: hidden;
+  position: relative;
 }
 
 .app__fullcontent {
   padding: 40px 100px;
   max-width: 1600px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .app__content {
