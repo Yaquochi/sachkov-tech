@@ -15,7 +15,7 @@
 				<li class="flex flex-row gap-2">
 					<img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
 					<span class="text-lg max-[1300px]:text-base">
-						47 записей занятий по 2 часа
+						52 записей занятий по 2 часа
 					</span>
 				</li>
 				<li class="flex flex-row gap-2">
