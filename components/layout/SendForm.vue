@@ -75,10 +75,10 @@
           </div>
 
           <div class="flex flex-col">
-            <span class="text-slate-200 text-sm">
+            <span class="text-slate-200 text-sm text-nowrap">
               Учись сейчас - плати потом!
             </span>
-            <span class="text-slate-200 text-sm">
+            <span class="text-slate-200 text-sm text-nowrap">
               В рассрочку до 18 месяцев
             </span>
           </div>
