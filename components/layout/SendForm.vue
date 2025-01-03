@@ -15,7 +15,7 @@
         <li class="flex flex-row gap-2">
           <img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
           <span class="text-lg max-[1300px]:text-base">
-            52 записей занятий по 2 часа
+            53 записей занятий по 2 часа
           </span>
         </li>
         <li class="flex flex-row gap-2">
@@ -57,15 +57,15 @@
       >
         <div class="flex flex-col gap-4 max-[540px]:gap-2">
           <div class="mb-4 max-[540px]:mb-2">
-            <span class="text-slate-400 max-[540px]:text-sm">
+            <!-- <span class="text-slate-400 max-[540px]:text-sm">
               от <span class="line-through">8 889</span> ₽/мес
-            </span>
+            </span> -->
 
             <div class="flex flex-row items-start gap-2 max-[540px]:gap-1">
               <span class="text-xl max-[540px]:text-lg whitespace-nowrap">
                 от
                 <span class="text-4xl font-semibold max-[540px]:text-2xl">
-                  7 222
+                  8 889
                 </span>
               </span>
               <span class="text-xl max-[540px]:text-base whitespace-nowrap">
