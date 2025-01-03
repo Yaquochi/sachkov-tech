@@ -93,7 +93,7 @@
             class="w-8 max-[540px]:w-6"
           />
           <span class="card__disc-text text-lg max-[540px]:text-base">
-            Скидка 12% при оплате сразу!
+            Скидка 20% при оплате сразу!
           </span>
         </div>
       </div>
