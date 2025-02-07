@@ -54,12 +54,6 @@
 					<p v-thtml="item.content" class="text-white section__card"></p>
 				</template>
 			</UAccordion>
-
-			<div class="section__total mt-6">
-				На данный момент не все темы и технологии из списка изучены, курс
-				находится в активной стадии. Каждую неделю проводятся занятия, на
-				которых мы продолжаем разбирать всё более сложные темы и технологии.
-			</div>
 		</div>
 
 		<LayoutStack />

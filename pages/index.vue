@@ -1,23 +1,23 @@
 <template>
   <div class="app">
-    <!-- <div
-      class="bg-red-500 text-white sticky top-0 left-0 right-0 w-full px-10 py-6 flex flex-row justify-center items-center divide-x drop-shadow-xl z-50 max-[540px]:px-6 max-[540px]:py-2"
+    <div
+      class="bg-blue-500 text-white sticky top-0 left-0 right-0 w-full px-10 py-6 flex flex-row justify-center items-center divide-x drop-shadow-xl z-50 max-[540px]:px-6 max-[540px]:py-2"
     >
       <h2
         class="uppercase text-3xl px-3 max-[540px]:text-2xl max-[540px]:text-center"
       >
-        новогодяя акция
+        интенсив<span class="normal-case">ная</span> акция
       </h2>
       <span class="text-xl px-3 max-[540px]:text-center">
-        23.12 <br class="hidden max-[540px]:inline" />
-        - 01.01
+        07.02 <br class="hidden max-[540px]:inline" />
+        - 21.02
       </span>
       <h2
         class="uppercase text-3xl px-3 max-[540px]:text-2xl max-[540px]:text-center"
       >
-        скидки до 20%
+        скидки до 25%
       </h2>
-    </div> -->
+    </div>
 
     <div class="app__fullcontent">
       <LayoutHeader />
