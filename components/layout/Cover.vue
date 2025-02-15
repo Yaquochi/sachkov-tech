@@ -14,7 +14,7 @@
 			<ul class="flex flex-col gap-6 max-[540px]:gap-3 max-[1300px]:gap-4">
 				<li class="flex flex-row items-center max-[540px]:items-start">
 					<img
-						src="~/assets/icon/star.png"
+						src="/icon/star.png"
 						alt="пункт списка."
 						class="max-[540px]:w-6 max-[1300px]:w-7"
 					/>
@@ -26,7 +26,7 @@
 				</li>
 				<li class="flex flex-row items-center max-[540px]:items-start">
 					<img
-						src="~/assets/icon/star.png"
+						src="/icon/star.png"
 						alt="пункт списка."
 						class="max-[540px]:w-6 max-[1300px]:w-7"
 					/>
@@ -38,7 +38,7 @@
 				</li>
 				<li class="flex flex-row items-center max-[540px]:items-start">
 					<img
-						src="~/assets/icon/star.png"
+						src="/icon/star.png"
 						alt="пункт списка."
 						class="max-[540px]:w-6 max-[1300px]:w-7"
 					/>
@@ -50,7 +50,7 @@
 				</li>
 				<li class="flex flex-row items-center max-[540px]:items-start">
 					<img
-						src="~/assets/icon/star.png"
+						src="/icon/star.png"
 						alt="пункт списка."
 						class="max-[540px]:w-6 max-[1300px]:w-7"
 					/>
@@ -62,7 +62,7 @@
 				</li>
 				<li class="flex flex-row items-center max-[540px]:items-start">
 					<img
-						src="~/assets/icon/star.png"
+						src="/icon/star.png"
 						alt="пункт списка."
 						class="max-[540px]:w-6 max-[1300px]:w-7"
 					/>
@@ -82,7 +82,7 @@
 		<div
 			class="section__card pt-6 w-2/5 flex flex-col justify-end max-[540px]:w-full max-[540px]:pt-3.5 max-[1300px]:pt-4"
 		>
-			<img src="~/assets/img/author.png" alt="автор." class="w-11/12 mx-auto" />
+			<img src="/img/author.png" alt="автор." class="w-11/12 mx-auto" />
 
 			<div
 				class="flex flex-col items-center gap-7 pb-10 px-6 max-[540px]:pb-3 max-[540px]:px-3 max-[540px]:gap-4 max-[1300px]:pb-6 max-[1300px]:gap-6"
@@ -96,7 +96,7 @@
 						<a href="https://t.me/sachkov_blog" class="section__btn">
 							<span class="section__btn-text">Telegram</span>
 							<img
-								src="~/assets/icon/tg.png"
+								src="/icon/tg.png"
 								alt="телеграм."
 								class="max-[540px]:w-5 max-[1300px]:w-6"
 							/>
@@ -109,7 +109,7 @@
 						>
 							<span class="section__btn-text">YouTube</span>
 							<img
-								src="~/assets/icon/yt.png"
+								src="/icon/yt.png"
 								alt="ютуб."
 								class="max-[540px]:w-5 max-[1300px]:w-6"
 							/>

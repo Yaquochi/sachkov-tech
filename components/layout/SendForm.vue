@@ -13,41 +13,41 @@
 
 			<ul class="flex flex-col gap-1">
 				<li class="flex flex-row gap-2">
-					<img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+					<img src="/icon/check.svg" alt="включено." class="w-5" />
 					<span class="text-lg max-[1300px]:text-base">
 						53 записи занятий по 2 часа
 					</span>
 				</li>
 				<li class="flex flex-row gap-2">
-					<img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+					<img src="/icon/check.svg" alt="включено." class="w-5" />
 					<span class="text-lg max-[1300px]:text-base"> 80 заданий </span>
 				</li>
 				<li class="flex flex-row gap-2">
-					<img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+					<img src="/icon/check.svg" alt="включено." class="w-5" />
 					<span class="text-lg max-[1300px]:text-base">
 						Доступ ко всем интенсивам
 					</span>
 				</li>
 				<li class="flex flex-row gap-2">
-					<img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+					<img src="/icon/check.svg" alt="включено." class="w-5" />
 					<span class="text-lg max-[1300px]:text-base">
 						Регулярное код-ревью
 					</span>
 				</li>
 				<li class="flex flex-row gap-2">
-					<img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+					<img src="/icon/check.svg" alt="включено." class="w-5" />
 					<span class="text-lg max-[1300px]:text-base">
 						Подготовка к собеседованию
 					</span>
 				</li>
 				<li class="flex flex-row gap-2">
-					<img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+					<img src="/icon/check.svg" alt="включено." class="w-5" />
 					<span class="text-lg max-[1300px]:text-base">
 						Помощь в составлении резюме
 					</span>
 				</li>
 				<li class="flex flex-row gap-2">
-					<img src="~/assets/icon/check.svg" alt="включено." class="w-5" />
+					<img src="/icon/check.svg" alt="включено." class="w-5" />
 					<span class="text-lg max-[1300px]:text-base"> Доступ навсегда </span>
 				</li>
 			</ul>
@@ -88,7 +88,7 @@
 					class="card-date flex flex-row items-start gap-3 w-fit h-fit mt-auto"
 				>
 					<img
-						src="~/assets/icon/discount.svg"
+						src="/icon/discount.svg"
 						alt="скидка."
 						class="w-8 max-[540px]:w-6"
 					/>
@@ -111,11 +111,7 @@
 
 				<a href="https://t.me/sachkova_mng" class="card__btn">
 					<span class="card__btn-text">Написать в Telegram</span>
-					<img
-						src="~/assets/icon/tg2.png"
-						alt="телеграм."
-						class="max-[540px]:w-5"
-					/>
+					<img src="/icon/tg2.png" alt="телеграм." class="max-[540px]:w-5" />
 				</a>
 			</div>
 

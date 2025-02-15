@@ -50,7 +50,7 @@
 									class="flex flex-row items-start"
 								>
 									<img
-										src="~/assets/icon/star.png"
+										src="/icon/star.png"
 										alt="пункт."
 										class="object-contain max-[540px]:w-6 max-[1300px]:w-7"
 									/>
@@ -69,12 +69,12 @@
 </template>
 
 <script setup>
-import chat from "~/assets/img/consist/chat.png";
-import intensive from "~/assets/img/consist/intensive.png";
-import lesson from "~/assets/img/consist/lesson.png";
-import review from "~/assets/img/consist/review.png";
-import task from "~/assets/img/consist/task.png";
-import work from "~/assets/img/consist/work.png";
+import chat from "/img/consist/chat.png";
+import intensive from "/img/consist/intensive.png";
+import lesson from "/img/consist/lesson.png";
+import review from "/img/consist/review.png";
+import task from "/img/consist/task.png";
+import work from "/img/consist/work.png";
 
 const { $viewport } = useNuxtApp();
 

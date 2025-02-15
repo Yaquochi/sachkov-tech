@@ -29,7 +29,7 @@
 
 			<div class="hidden max-[540px]:block">
 				<img
-					src="~/assets/icon/lilRightArr.png"
+					src="/icon/lilRightArr.png"
 					alt="смотреть."
 					class="h-4 -mb-4 arrAnimation ml-auto"
 				/>
@@ -43,9 +43,9 @@
 						<span>Junior+</span>
 					</li>
 					<li class="flex flex-col gap-2.5 min-w-5 justify-center">
-						<img src="~/assets/icon/star.png" alt="пункт." class="w-3.5" />
-						<img src="~/assets/icon/star.png" alt="пункт." class="w-3.5" />
-						<img src="~/assets/icon/star.png" alt="пункт." class="w-3.5" />
+						<img src="/icon/star.png" alt="пункт." class="w-3.5" />
+						<img src="/icon/star.png" alt="пункт." class="w-3.5" />
+						<img src="/icon/star.png" alt="пункт." class="w-3.5" />
 					</li>
 					<li class="flex flex-col gap-3 py-4 text-white">
 						<span
@@ -56,9 +56,9 @@
 						<span>Middle</span>
 					</li>
 					<li class="flex flex-col gap-2.5 min-w-5 justify-center">
-						<img src="~/assets/icon/star.png" alt="пункт." class="w-3.5" />
-						<img src="~/assets/icon/star.png" alt="пункт." class="w-3.5" />
-						<img src="~/assets/icon/star.png" alt="пункт." class="w-3.5" />
+						<img src="/icon/star.png" alt="пункт." class="w-3.5" />
+						<img src="/icon/star.png" alt="пункт." class="w-3.5" />
+						<img src="/icon/star.png" alt="пункт." class="w-3.5" />
 					</li>
 					<li class="flex flex-col gap-3 py-4 text-white">
 						<span
