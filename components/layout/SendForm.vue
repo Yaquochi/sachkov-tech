@@ -65,7 +65,7 @@
               <span class="text-xl max-[540px]:text-lg whitespace-nowrap">
                 от
                 <span class="text-4xl font-semibold max-[540px]:text-2xl">
-                  8 889
+                  7 222
                 </span>
               </span>
               <span class="text-xl max-[540px]:text-base whitespace-nowrap">
@@ -93,7 +93,7 @@
             class="w-8 max-[540px]:w-6"
           />
           <span class="card__disc-text text-lg max-[540px]:text-base">
-            Скидка 20% при оплате сразу!
+            Скидка 12% при оплате сразу!
           </span>
         </div>
       </div>
