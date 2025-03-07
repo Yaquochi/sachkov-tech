@@ -22,3 +22,8 @@ logs
 .env
 .env.*
 !.env.example
+
+# Certbot dirs
+/certbot/conf/archive/
+/certbot/conf/accounts/
+certbot/conf/live/
