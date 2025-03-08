@@ -104,7 +104,7 @@
 					</li>
 					<li class="flex-1">
 						<a
-							href="https://www.youtube.com/@KirillSachkov"
+							href="https://www.youtube.com/@SachkovTech"
 							class="section__btn"
 						>
 							<span class="section__btn-text">YouTube</span>
