@@ -121,7 +121,7 @@
         <h3 class="card__descr">
           Обрати внимание на наши
           <a
-            href="https://sachkov-intensive.vercel.app"
+            href="https://sachkov-intensive.ru/"
             class="underline text-purple-400"
           >
             интенсивы
