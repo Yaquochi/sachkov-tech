@@ -15,7 +15,7 @@
 			<h2
 				class="uppercase text-3xl px-3 max-[540px]:text-2xl max-[540px]:text-center"
 			>
-				скидки до 15%
+				скидки до 23%
 			</h2>
 		</div>
 
