@@ -55,15 +55,15 @@
 			>
 				<div class="flex flex-col gap-4 max-[540px]:gap-2">
 					<div class="mb-4 max-[540px]:mb-2">
-						<span class="text-slate-400 max-[540px]:text-sm">
+						<!-- <span class="text-slate-400 max-[540px]:text-sm">
 							от <span class="line-through">10 833</span> ₽/мес
-						</span>
+						</span> -->
 
 						<div class="flex flex-row items-start gap-2 max-[540px]:gap-1">
 							<span class="text-xl max-[540px]:text-lg whitespace-nowrap">
 								от
 								<span class="text-4xl font-semibold max-[540px]:text-2xl">
-									9 208
+									10 833
 								</span>
 							</span>
 							<span class="text-xl max-[540px]:text-base whitespace-nowrap">
@@ -91,7 +91,7 @@
 						class="w-8 max-[540px]:w-6"
 					/>
 					<span class="text-lg max-[540px]:text-base">
-						100 000 ₽ <span class="card__disc-text">при оплате сразу!</span>
+						115 000 ₽ <span class="card__disc-text">при оплате сразу!</span>
 					</span>
 				</div>
 			</div>
