@@ -1,6 +1,6 @@
 <template>
     <div class="app">
-        <div
+        <!-- <div
             class="bg-emerald-400 text-white sticky top-0 left-0 right-0 w-full px-10 py-6 flex flex-row justify-center items-center divide-x drop-shadow-xl z-50 max-[540px]:px-6 max-[540px]:py-2"
         >
             <h2
@@ -13,7 +13,7 @@
             >
                 скидки до 25%
             </h2>
-        </div>
+        </div> -->
 
         <div class="app__fullcontent">
             <LayoutHeader />
