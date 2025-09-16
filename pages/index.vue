@@ -1,19 +1,19 @@
 <template>
     <div class="app">
-        <!-- <div
-            class="bg-emerald-400 text-white sticky top-0 left-0 right-0 w-full px-10 py-6 flex flex-row justify-center items-center divide-x drop-shadow-xl z-50 max-[540px]:px-6 max-[540px]:py-2"
+        <div
+            class="bg-purple-500 text-white sticky top-0 left-0 right-0 w-full px-10 py-6 flex flex-row justify-center items-center divide-x drop-shadow-xl z-50 max-[540px]:px-6 max-[540px]:py-2"
         >
             <h2
                 class="uppercase text-3xl px-3 max-[540px]:text-2xl max-[540px]:text-center"
             >
-                День знаний
+                Акция!
             </h2>
             <h2
                 class="uppercase text-3xl px-3 max-[540px]:text-2xl max-[540px]:text-center"
             >
-                скидки до 25%
+                скидки до 20%
             </h2>
-        </div> -->
+        </div>
 
         <div class="app__fullcontent">
             <LayoutHeader />

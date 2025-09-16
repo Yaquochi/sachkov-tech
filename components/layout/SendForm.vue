@@ -6,11 +6,11 @@
             <div class="flex flex-row justify-between items-start">
                 <h3 class="card__title">Стоимость курса</h3>
 
-                <!-- <span
+                <span
                     class="card-disc text-xl font-semibold max-[540px]:text-base"
                 >
                     -20%
-                </span> -->
+                </span>
             </div>
 
             <ul class="flex flex-col gap-1">
@@ -77,7 +77,7 @@
                                 <span
                                     class="text-4xl font-semibold max-[540px]:text-2xl"
                                 >
-                                    10833
+                                    9585
                                 </span>
                             </span>
                             <span
@@ -107,7 +107,7 @@
                         class="w-8 max-[540px]:w-6"
                     />
                     <span class="text-lg max-[540px]:text-base">
-                        115 000 ₽
+                        100 000 ₽
                         <span class="card__disc-text">при оплате сразу!</span>
                     </span>
                 </div>
