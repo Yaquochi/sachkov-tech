@@ -14,7 +14,7 @@
       <ul class="flex flex-col gap-1">
         <li class="flex flex-row gap-2">
           <img src="/icon/check.svg" alt="включено." class="w-5" />
-          <span class="text-lg max-[1300px]:text-base"> 92 видеоурока </span>
+          <span class="text-lg max-[1300px]:text-base"> 100+ видеоуроков </span>
         </li>
         <li class="flex flex-row gap-2">
           <img src="/icon/check.svg" alt="включено." class="w-5" />
@@ -29,7 +29,7 @@
         <li class="flex flex-row gap-2">
           <img src="/icon/check.svg" alt="включено." class="w-5" />
           <span class="text-lg max-[1300px]:text-base">
-            Регулярное код-ревью
+            Личное ревью от ментора
           </span>
         </li>
         <li class="flex flex-row gap-2">

@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/ui": "^2.18.7",
     "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/sitemap": "^7.6.0",
     "nuxt": "^3.13.0",
     "nuxt-viewport": "^2.2.0",
     "tailwind-scrollbar-hide": "^1.1.7",

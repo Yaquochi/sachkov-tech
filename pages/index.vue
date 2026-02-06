@@ -21,9 +21,10 @@
       <div class="app__content">
         <LayoutCover />
         <LayoutShortAbout />
-        <LayoutAboutProfession />
-        <LayoutWillSuit />
         <LayoutConsistOf />
+        <LayoutRoadmap />
+        <LayoutWillSuit />
+        <LayoutAboutProfession />
         <LayoutProgramm />
         <LayoutWhatYouGet />
         <LayoutReviews />

@@ -83,3 +83,81 @@ body::-webkit-scrollbar-thumb {
     left: -35px !important;
   }
 }
+
+/* Общие стили секций */
+.section-title {
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 110%;
+  background: linear-gradient(
+    90deg,
+    #e59cff 0.01%,
+    #ba9cff 50.01%,
+    #9cb2ff 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-card {
+  border-radius: 24px;
+  border: 1px solid #e59cff;
+  background: rgba(10, 1, 25, 0.6);
+  box-shadow: inset 0 0 15px rgba(198, 135, 234, 0.3);
+}
+
+.section-card-title {
+  font-weight: 600;
+  line-height: 120%;
+  background: linear-gradient(
+    90deg,
+    #e59cff 0.01%,
+    #ba9cff 50.01%,
+    #9cb2ff 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #e59cff 0.01%,
+    #ba9cff 50.01%,
+    #9cb2ff 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-btn {
+  background: linear-gradient(90deg, #c2b8ff, #5a2bc7);
+  transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+  box-shadow: 0 0 20px rgba(229, 156, 255, 0.5);
+}
+
+@media screen and (max-width: 1300px) {
+  .section-title {
+    font-size: 58px;
+  }
+
+  .section-card {
+    border-radius: 18px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-card {
+    border-radius: 14px;
+  }
+}
