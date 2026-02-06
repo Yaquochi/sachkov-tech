@@ -36,30 +36,30 @@ export default defineNuxtConfig({
         lang: "ru",
       },
       title:
-        "Курс .NET Fullstack разработчик — от нуля до оффера | Кирилл Сачков",
+        "Курс C# ASP.NET Core и React | Обучение .NET Fullstack разработке с ментором",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           name: "description",
           content:
-            "Практический курс по .NET fullstack разработке. 100+ видеоуроков, ASP.NET Core, React, Docker, микросервисы. Код-ревью, поддержка ментора, помощь с трудоустройством. Ученики получают офферы 100-150к.",
+            "Курс по C# и ASP.NET Core для становления Middle Fullstack разработчиком. Микросервисы, Docker, React, PostgreSQL. Личное менторство, код-ревью и гарантия поддержки до оффера.",
         },
         {
           name: "keywords",
           content:
-            "курс .NET, ASP.NET Core, C# обучение, fullstack разработчик, React курс, микросервисы, Docker, курс программирования, трудоустройство программист",
+            "курс c#, обучение asp.net core, курсы .net разработчика, fullstack разработка, react и c#, микросервисы обучение, docker для начинающих, ментор c#, код-ревью, трудоустройство программистом, backend разработка, postgresql, entity framework core, rabbitmq, redis, architecture, clean architecture, ddd, cqrs, обучение программированию с нуля",
         },
         { property: "og:type", content: "website" },
         { property: "og:url", content: "https://sachkov-dotnet.ru/" },
         {
           property: "og:title",
-          content: "Курс .NET Fullstack разработчик — от нуля до оффера",
+          content: "Курс C# ASP.NET Core | Стань Middle .NET разработчиком",
         },
         {
           property: "og:description",
           content:
-            "Практический курс по .NET fullstack разработке. 100+ видеоуроков, код-ревью, поддержка ментора. Ученики получают офферы 100-150к.",
+            "Полный курс по C# и веб-разработке. Создаем сложный видеохостинг на микросервисах. Личное менторство Кирилла Сачкова.",
         },
         {
           property: "og:image",
